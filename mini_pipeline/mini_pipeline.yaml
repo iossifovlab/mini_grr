@@ -4,8 +4,8 @@ preamble:
    description: Test pipeline for mini_grr
 
 annotators:
-
-
+# - position_score: "mini_*"
+- position_score: mini_positionscore_bw 
 
 # - effect_annotator:
 #     gene_models: mini_genemodel_refseq
@@ -15,7 +15,7 @@ annotators:
 #       - gene_list
 
 # - position_score: mini_positionscore_tsv_0     #IMPERFECT
-- position_score: mini_positionscore_tsv_1
+# - position_score: mini_positionscore_tsv_1
 # - position_score: mini_positionscore_tsv_interval_0  #IMPERFECT
 # - position_score: mini_positionscore_tsv_interval_1
 
@@ -23,10 +23,10 @@ annotators:
 # - position_score: mini_positionscore_csv_1
 
 
-- position_score: mini_positionscore_tabix_0
-- position_score: mini_positionscore_tabix_1
-- position_score: mini_positionscore_tabix_interval_0
-- position_score: mini_positionscore_tabix_interval_1
+# - position_score: mini_positionscore_tabix_0
+# - position_score: mini_positionscore_tabix_1
+# - position_score: mini_positionscore_tabix_interval_0
+# - position_score: mini_positionscore_tabix_interval_1
 # 
 
 # - position_score: mini_positionscore_bedgraph_tabix_0
