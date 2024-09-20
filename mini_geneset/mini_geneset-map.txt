@@ -1,0 +1,2 @@
+#geneNS	sym
+geneA	1 2

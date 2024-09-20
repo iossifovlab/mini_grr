@@ -1,0 +1,49 @@
+{
+  "config": {
+    "histograms": [
+      {
+        "type": "number",
+        "view_range": {
+          "min": 0.0,
+          "max": 5.0
+        },
+        "number_of_bins": 10,
+        "x_log_scale": false,
+        "y_log_scale": true,
+        "x_min_log": null
+      },
+      {
+        "type": "categorical",
+        "value_order": [],
+        "y_log_scale": true,
+        "plot_function": "customplot.py:plot_clnsig"
+      }
+    ],
+    "table": {
+      "config": {
+        "filename": "mini_vcf.vcf.gz",
+        "index_filename": "mini_vcf.vcf.gz.tbi"
+      },
+      "files_md5": {
+        "mini_vcf.vcf.gz": "4108f0b0e1a664aaccce631e1e2f714e",
+        "mini_vcf.vcf.gz.tbi": "c08b8e13d84d8f23f365604f4ae6ede4"
+      }
+    }
+  },
+  "score_config": [
+    {
+      "id": "vcf_1_int",
+      "type": "int",
+      "name": "vcf_1_int",
+      "index": null,
+      "na_values": "['', '.', 'NA', 'nan']"
+    },
+    {
+      "id": "vcf_1_str",
+      "type": "str",
+      "name": "vcf_1_str",
+      "index": null,
+      "na_values": "[]"
+    }
+  ]
+}

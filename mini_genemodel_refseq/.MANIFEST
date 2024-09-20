@@ -1,0 +1,15 @@
+- md5: 4c268f71d25d26ee78156ade0b51e0bb
+  name: genomic_resource.yaml
+  size: 210
+- md5: 15a0c1ef31634138d7e782a3093dbafe
+  name: index.html
+  size: 4131
+- md5: 1b40b51ef56a01ced4d3ded878666956
+  name: mini_refseq.txt
+  size: 61
+- md5: a612462d6cf73bdef3a09d9bae03bd87
+  name: statistics/stats.yaml
+  size: 312
+- md5: 7a97fedc5f3b1b0a4eda73e57462a858
+  name: statistics/stats_hash
+  size: 124

@@ -1,0 +1,7 @@
+#chrom	pos	ref	alt	genome	uniprot_id	transcript_id	an_np_score	a_class
+chr1	0	T	A	hg38	uniprotid1	transcriptid1	1	good
+chr1	0	T	C	hg38	uniprotid1	transcriptid1	1.1	bad
+chr1	0	T	G	hg38	uniprotid1	transcriptid1	1.2	bad
+chr2	4	A	T	hg38	uniprotid1	transcriptid1	2	good
+chr2	4	A	C	hg38	uniprotid1	transcriptid1	2.1	bad
+chr2	4	A	G	hg38	uniprotid1	transcriptid1	2.2	bad

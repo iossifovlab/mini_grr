@@ -1,0 +1,15 @@
+- md5: 751ed0aaa8b935a89d03e974823bf431
+  name: genomic_resource.yaml
+  size: 201
+- md5: 7522a23960fa645f618ae6677b2ddbb8
+  name: index.html
+  size: 2988
+- md5: 6192fca86a29be5bc6f096390a779872
+  name: mini_geneset-map.txt
+  size: 21
+- md5: 3636a33d344829827800dd4c96ed6427
+  name: mini_geneset-mapnames.txt
+  size: 24
+- md5: 6a99c575ab87f8c7d1ed1e52e7e349ce
+  name: statistics/stats_hash
+  size: 11

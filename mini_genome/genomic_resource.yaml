@@ -1,0 +1,15 @@
+type: genome
+
+filename: mini.genome.fa
+
+chrom_prefix: "chr"
+
+
+meta:
+  summary: |
+    mini genome
+
+  description: |
+    my description
+
+  labels: ~

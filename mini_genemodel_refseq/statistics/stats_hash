@@ -1,0 +1,8 @@
+{
+  "config": {
+    "format": "refseq"
+  },
+  "files_md5": {
+    "mini_refseq.txt": "1b40b51ef56a01ced4d3ded878666956"
+  }
+}

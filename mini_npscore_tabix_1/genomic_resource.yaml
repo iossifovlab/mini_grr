@@ -1,0 +1,56 @@
+---
+
+type: np_score
+
+table:
+  filename: mini_npscore_tabix_1.tsv.gz
+  format: tabix
+
+  # defined by score_type
+  chrom:
+    name: chrom
+  pos_begin:
+    name: pos
+  pos_end:
+    name: pos
+  reference:
+    name: ref
+  alternative:
+    name: alt
+
+# score values
+scores:
+  - id: np_tsv_1_num
+    name: an_np_score
+    type: float
+    desc: |
+      a description
+    large_values_desc: "more"
+    small_values_desc: "less"
+    histogram:
+      type: number
+      number_of_bins: 100
+      view_range:
+        min: 1
+        max: 3
+      y_log_scale: True
+      
+  - id: np_tsv_1_cat
+    name: a_class
+    type: str
+    desc: |
+      a description
+    histogram:
+      type: categorical
+      y_log_scale: True
+
+
+meta:
+  summary: |
+
+    1-based tsv np score
+
+  description: |
+
+    a description
+

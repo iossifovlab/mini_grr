@@ -1,0 +1,12 @@
+##fileformat=VCFv4.1
+##fileDate=2024-07-30
+##source= imagination
+##reference=minigenome
+##ID=<Description="Variation ID">
+##INFO=<ID=vcf_1_int,Number=1,Type=Integer,Description="description">
+##INFO=<ID=vcf_1_float,Number=1,Type=Float,Description="description">
+##INFO=<ID=vcf_1_str,Number=.,Type=String,Description="description">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+chr1	1	100	T	A	.	.	vcf_1_int=1;vcf_1_str=str1;vcf_1_float=0.1
+chr2	5	101	A	G	.	.	vcf_1_int=2;vcf_1_str=str2;vcf_1_float=0.3
+chr2	5	101	A	T	.	.	vcf_1_int=3;vcf_1_str=str3;vcf_1_float=0.3

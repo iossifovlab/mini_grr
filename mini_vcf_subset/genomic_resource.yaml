@@ -1,0 +1,39 @@
+type: allele_score 
+
+table:
+  filename: mini_vcf.vcf.gz
+  index_filename: mini_vcf.vcf.gz.tbi
+
+
+scores:
+  - id: vcf_1_int
+    column_name: vcf_1_int
+    type: int
+    desc: |
+      description
+    large_values_desc: "high"
+    small_values_desc: "low"
+    histogram:
+      type: number
+      number_of_bins: 10
+      view_range:
+        min: 0.0
+        max: 5.0
+      y_log_scale: True
+
+  - id: vcf_1_str
+    column_name: vcf_1_str
+    type: str
+    desc: |
+      description
+
+
+meta:
+
+  summary: |
+      1-based vcf allele score
+  description: |
+      a description
+
+  labels:
+    reference_genome: mini_genome

@@ -1,0 +1,41 @@
+---
+
+type: position_score
+
+table:
+  filename: mini_positionscore_interval_tabix_1.tsv.gz
+  format: tabix
+  header_mode: none
+
+  # defined by score_type
+  chrom:
+    index: 0
+  pos_begin:
+    index: 1
+  pos_end:
+    index: 2
+
+# score values
+scores:
+  - id: posint_tabix_1
+    type: float
+    desc: "a description"
+    large_values_desc: "more"
+    small_values_desc: "less"
+    index: 3
+    histogram:
+      type: number
+      number_of_bins: 100
+      view_range:
+        min: 0.0
+        max: 1.0
+      y_log_scale: True
+
+
+meta:
+  summary: |
+    1-based tabix position score (interval)
+
+  description: |
+    
+    my description

@@ -1,0 +1,10 @@
+.sge_worker_logs
+sge_worker_logs
+dask-worker-space
+temp
+.grr
+.tasks-logs
+.tasks-log
+.task-logs
+.task-log
+.DS_Store

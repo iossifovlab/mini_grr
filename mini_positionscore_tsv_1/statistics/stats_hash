@@ -1,0 +1,44 @@
+{
+  "config": {
+    "histograms": [
+      {
+        "type": "number",
+        "view_range": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "number_of_bins": 100,
+        "x_log_scale": false,
+        "y_log_scale": true,
+        "x_min_log": null
+      }
+    ],
+    "table": {
+      "config": {
+        "filename": "mini_positionscore_tsv_1.tsv",
+        "header_mode": "none",
+        "chrom": {
+          "index": 0
+        },
+        "pos_begin": {
+          "index": 1
+        },
+        "pos_end": {
+          "index": 1
+        }
+      },
+      "files_md5": {
+        "mini_positionscore_tsv_1.tsv": "aa21e2ddc0c4264c36aa14055286c6eb"
+      }
+    }
+  },
+  "score_config": [
+    {
+      "id": "pos_tsv_1",
+      "type": "float",
+      "name": null,
+      "index": 2,
+      "na_values": "['', '.', 'NA', 'nan']"
+    }
+  ]
+}

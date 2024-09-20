@@ -1,0 +1,346 @@
+
+
+<html>
+<head>
+<style>
+h3,h4 {
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+}
+table {
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+}
+th {
+    font-size: 20px;
+}
+td {
+    font-size: 18px;
+}
+
+#chromosomes-table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+#chromosomes-table th {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+#chromosomes-table td {
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+#chromosomes-table th:first-child,
+#chromosomes-table td:first-child {
+    border-left: 1px solid;
+}
+#chromosomes-table thead tr:nth-of-type(2) th {
+    border-top: none;
+}
+#chromosomes-table thead {
+    position: sticky; top: 0; background-color: white;
+}
+
+
+</style>
+</head>
+    <body>
+
+    <h1>Resource</h1>
+    <div>
+        <table border="1">
+            <tr>
+                <td>
+                    <b>Id:</b>
+                </td>
+                <td>mini_genome</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Type:</b>
+                </td>
+                <td>genome</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Version:</b>
+                </td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td><b>Summary:</b></td>
+                <td>
+                    <div>
+                        <template shadowrootmode="open"><p>mini genome</p>
+
+                        </template>
+                     </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Description:</b>
+                </td>
+                <td>
+                    <div>
+                        <template shadowrootmode="open"><p>my description</p>
+
+                        </template>
+                     </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>Labels:</b>
+                </td>
+                <td>
+                
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    
+
+
+<p>chrom prefix: chr</p>
+
+
+
+
+<h3>Genome statistics:</h3>
+<h3>Chromosomes (2):</h3>
+<div style="max-height: 50%; overflow-y: auto; width: fit-content; margin-bottom: 14px;">
+    <table id="chromosomes-table">
+        <thead>
+            <tr>
+                <th>Chrom</th>
+                <th>Length</th>
+                
+                    <th>A</th>
+                
+                    <th>T</th>
+                
+                    <th>C</th>
+                
+                    <th>G</th>
+                
+                    <th>N</th>
+                
+            </tr>
+            <tr>
+                <th>Global</th>
+                <td>20</td>
+                
+                    <td>80.00%</td>
+                
+                    <td>15.00%</td>
+                
+                    <td>0.00%</td>
+                
+                    <td>5.00%</td>
+                
+                    <td>0.00%</td>
+                
+            </tr>
+        </thead><tr>
+                <td>chr1</td>
+                <td>10</td>
+                
+                    
+                        <td>60.00%</td>
+                    
+                
+                    
+                        <td>30.00%</td>
+                    
+                
+                    
+                        <td>0.00%</td>
+                    
+                
+                    
+                        <td>10.00%</td>
+                    
+                
+                    
+                        <td>0.00%</td>
+                    
+                
+            </tr><tr>
+                <td>chr2</td>
+                <td>10</td>
+                
+                    
+                        <td>100.00%</td>
+                    
+                
+                    
+                        <td>0.00%</td>
+                    
+                
+                    
+                        <td>0.00%</td>
+                    
+                
+                    
+                        <td>0.00%</td>
+                    
+                
+                    
+                        <td>0.00%</td>
+                    
+                
+            </tr></table>
+</div>
+
+    <h4>Bi-Nucleotide distribution:</h4>
+    <table border="1">
+        <tr>
+            <th></th>
+            
+                <th>A</th>
+            
+                <th>T</th>
+            
+                <th>C</th>
+            
+                <th>G</th>
+            
+                <th>N</th>
+            
+        </tr>
+        
+            <tr>
+                <th>A</th>
+                
+                    <td>66.67%</td>
+                
+                    <td>11.11%</td>
+                
+                    <td>0.00%</td>
+                
+                    <td>0.00%</td>
+                
+                    <td>0.00%</td>
+                
+            </tr>
+        
+            <tr>
+                <th>T</th>
+                
+                    <td>11.11%</td>
+                
+                    <td>0.00%</td>
+                
+                    <td>0.00%</td>
+                
+                    <td>5.56%</td>
+                
+                    <td>0.00%</td>
+                
+            </tr>
+        
+            <tr>
+                <th>C</th>
+                
+                    <td>0.00%</td>
+                
+                    <td>0.00%</td>
+                
+                    <td>0.00%</td>
+                
+                    <td>0.00%</td>
+                
+                    <td>0.00%</td>
+                
+            </tr>
+        
+            <tr>
+                <th>G</th>
+                
+                    <td>5.56%</td>
+                
+                    <td>0.00%</td>
+                
+                    <td>0.00%</td>
+                
+                    <td>0.00%</td>
+                
+                    <td>0.00%</td>
+                
+            </tr>
+        
+            <tr>
+                <th>N</th>
+                
+                    <td>0.00%</td>
+                
+                    <td>0.00%</td>
+                
+                    <td>0.00%</td>
+                
+                    <td>0.00%</td>
+                
+                    <td>0.00%</td>
+                
+            </tr>
+        
+    </table>
+
+
+
+    <h1>Files</h1>
+    <table>
+    <thead>
+        <tr>
+            <th>Filename</th>
+            <th>Size</th>
+            <th>md5</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="nowrap">
+                <a href='dataprep.sh'>dataprep.sh</a>
+            </td>
+            <td class="nowrap">30.0 B</td>
+            <td class="nowrap">11060b23caa35c409459127662ac2af8</td>
+        </tr>
+        <tr>
+            <td class="nowrap">
+                <a href='genomic_resource.yaml'>genomic_resource.yaml</a>
+            </td>
+            <td class="nowrap">147.0 B</td>
+            <td class="nowrap">64e23e62e93c90b02bbd3966cfe3fc7a</td>
+        </tr>
+        <tr>
+            <td class="nowrap">
+                <a href='mini.genome.fa'>mini.genome.fa</a>
+            </td>
+            <td class="nowrap">63.0 B</td>
+            <td class="nowrap">c6affce7a23b3e79d2bf863f4e4a6c83</td>
+        </tr>
+        <tr>
+            <td class="nowrap">
+                <a href='mini.genome.fa.fai'>mini.genome.fa.fai</a>
+            </td>
+            <td class="nowrap">34.0 B</td>
+            <td class="nowrap">40720e2bef4d54576055883e933b7254</td>
+        </tr>
+        <tr>
+            <td class="nowrap">
+                <a href='statistics/'>statistics/</a>
+            </td>
+            <td class="nowrap"></td>
+            <td class="nowrap"></td>
+        </tr>
+    </tbody>
+    </table>
+
+    </body>
+</html>

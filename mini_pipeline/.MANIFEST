@@ -1,0 +1,12 @@
+- md5: 1c826119016028bbc16e0bac271c3aa1
+  name: genomic_resource.yaml
+  size: 150
+- md5: 0c6b5be9fee9a9880b650d1a4eef3c72
+  name: index.html
+  size: 16938
+- md5: d49dfd2e100f36f127ca0c4cbb57c3ae
+  name: mini_pipeline.yaml
+  size: 1304
+- md5: 6a99c575ab87f8c7d1ed1e52e7e349ce
+  name: statistics/stats_hash
+  size: 11

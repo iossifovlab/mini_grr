@@ -1,0 +1,8 @@
+type: annotation_pipeline
+filename: mini_pipeline.yaml 
+
+meta:
+  summary: |
+    pipeline for mini_grr
+  description: |
+    Test pipeline for mini_grr

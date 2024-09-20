@@ -1,0 +1,352 @@
+
+
+<html>
+<head>
+<style>
+h3,h4 {
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+}
+table {
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+}
+th {
+    font-size: 20px;
+}
+td {
+    font-size: 18px;
+}
+
+
+</style>
+</head>
+    <body>
+
+    <h1>Resource</h1>
+    <div>
+        <table border="1">
+            <tr>
+                <td>
+                    <b>Id:</b>
+                </td>
+                <td>mini_vcf_all</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Type:</b>
+                </td>
+                <td>allele_score</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Version:</b>
+                </td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td><b>Summary:</b></td>
+                <td>
+                    <div>
+                        <template shadowrootmode="open"><p>1-based vcf allele score</p>
+
+                        </template>
+                     </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Description:</b>
+                </td>
+                <td>
+                    <div>
+                        <template shadowrootmode="open"><p>a description</p>
+
+                        </template>
+                     </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>Labels:</b>
+                </td>
+                <td>
+                
+                    <ul>
+                    
+                        <li>reference_genome: mini_genome</li>
+                    
+                    </ul>
+                
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    
+
+<style>
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        justify-content: center;
+    }
+
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+
+    .close {
+        float: right;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+         color: #bbb;
+         text-decoration: none;
+         cursor: pointer;
+    }
+</style>
+
+
+    <script type="text/javascript">
+        function openModal(scoreId) {
+            var modal = document.getElementById("modal-" + scoreId);
+            modal.style.display = "flex";
+        }
+
+        function closeModal(scoreId) {
+            var modal = document.getElementById("modal-" + scoreId);
+            modal.style.display = "none";
+        }
+    </script>
+
+
+
+
+
+<h1>Scores</h1>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Type</th>
+        <th>Default annotation</th>
+        <th>Description</th>
+        <th>Histogram</th>
+        <th>Range</th>
+    </tr><tr class="score-definition">
+
+            <td>vcf_1_int</td>
+
+            <td>int</td>
+
+            
+            <td>
+                <p>vcf_1_int</p>
+            </td>
+
+            <td>
+                <div>description</div>
+                
+                
+            </td>
+
+            <td>
+                
+                
+                <img src="statistics/histogram_vcf_1_int.png"
+                    alt="HISTOGRAM FOR vcf_1_int"
+                    title=vcf_1_int
+                    width="200"
+                    style="cursor: pointer"
+                    onclick="openModal(title)"></td>
+
+            <td>
+                [1.000, 3.000]</td>
+
+        </tr><tr class="score-definition">
+
+            <td>vcf_1_float</td>
+
+            <td>float</td>
+
+            
+            <td>
+                <p>vcf_1_float</p>
+            </td>
+
+            <td>
+                <div>description</div>
+                
+                
+            </td>
+
+            <td>
+                
+                
+                <img src="statistics/histogram_vcf_1_float.png"
+                    alt="HISTOGRAM FOR vcf_1_float"
+                    title=vcf_1_float
+                    width="200"
+                    style="cursor: pointer"
+                    onclick="openModal(title)"></td>
+
+            <td>
+                [0.100, 0.300]</td>
+
+        </tr><tr class="score-definition">
+
+            <td>vcf_1_str</td>
+
+            <td>str</td>
+
+            
+            <td>
+                <p>vcf_1_str</p>
+            </td>
+
+            <td>
+                <div>description</div>
+                
+                
+            </td>
+
+            <td>
+                
+                
+                <img src="statistics/histogram_vcf_1_str.png"
+                    alt="HISTOGRAM FOR vcf_1_str"
+                    title=vcf_1_str
+                    width="200"
+                    style="cursor: pointer"
+                    onclick="openModal(title)"></td>
+
+            <td>
+                str1, str2, str3</td>
+
+        </tr><div id="modal-vcf_1_int" class="modal">
+            <div style="padding: 10px 20px; background-color: #fff; height: fit-content; width: fit-content;">
+                <span title=vcf_1_int class="close" onclick="closeModal(title)">&times;</span>
+                <img class="modal-content" id="histogram-vcf_1_int"
+                    src="statistics/histogram_vcf_1_int.png"
+                    alt="HISTOGRAM FOR vcf_1_int"
+                    title=vcf_1_int
+                    width="200">
+            </div>
+        </div><div id="modal-vcf_1_float" class="modal">
+            <div style="padding: 10px 20px; background-color: #fff; height: fit-content; width: fit-content;">
+                <span title=vcf_1_float class="close" onclick="closeModal(title)">&times;</span>
+                <img class="modal-content" id="histogram-vcf_1_float"
+                    src="statistics/histogram_vcf_1_float.png"
+                    alt="HISTOGRAM FOR vcf_1_float"
+                    title=vcf_1_float
+                    width="200">
+            </div>
+        </div><div id="modal-vcf_1_str" class="modal">
+            <div style="padding: 10px 20px; background-color: #fff; height: fit-content; width: fit-content;">
+                <span title=vcf_1_str class="close" onclick="closeModal(title)">&times;</span>
+                <img class="modal-content" id="histogram-vcf_1_str"
+                    src="statistics/histogram_vcf_1_str.png"
+                    alt="HISTOGRAM FOR vcf_1_str"
+                    title=vcf_1_str
+                    width="200">
+            </div>
+        </div>
+</table>
+
+
+
+    <h1>Files</h1>
+    <table>
+    <thead>
+        <tr>
+            <th>Filename</th>
+            <th>Size</th>
+            <th>md5</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="nowrap">
+                <a href='dataprep.sh'>dataprep.sh</a>
+            </td>
+            <td class="nowrap">652.0 B</td>
+            <td class="nowrap">c106765c88b8bf4cbf618498b821313c</td>
+        </tr>
+        <tr>
+            <td class="nowrap">
+                <a href='genomic_resource.yaml'>genomic_resource.yaml</a>
+            </td>
+            <td class="nowrap">227.0 B</td>
+            <td class="nowrap">911c391f4317e42510cecae4fd0ce6a9</td>
+        </tr>
+        <tr>
+            <td class="nowrap">
+                <a href='mini_vcf.header.vcf'>mini_vcf.header.vcf</a>
+            </td>
+            <td class="nowrap">370.0 B</td>
+            <td class="nowrap">145d88310a5e372a824c7b203a7bf5ab</td>
+        </tr>
+        <tr>
+            <td class="nowrap">
+                <a href='mini_vcf.header.vcf.gz'>mini_vcf.header.vcf.gz</a>
+            </td>
+            <td class="nowrap">264.0 B</td>
+            <td class="nowrap">42e6b6414bd6926869d7a6138862c939</td>
+        </tr>
+        <tr>
+            <td class="nowrap">
+                <a href='mini_vcf.header.vcf.gz.tbi'>mini_vcf.header.vcf.gz.tbi</a>
+            </td>
+            <td class="nowrap">72.0 B</td>
+            <td class="nowrap">4cb176febbc8c26d717a6c6e67b9c905</td>
+        </tr>
+        <tr>
+            <td class="nowrap">
+                <a href='mini_vcf.vcf'>mini_vcf.vcf</a>
+            </td>
+            <td class="nowrap">555.0 B</td>
+            <td class="nowrap">09ece4e42b53bec11515b04780cfd951</td>
+        </tr>
+        <tr>
+            <td class="nowrap">
+                <a href='mini_vcf.vcf.gz'>mini_vcf.vcf.gz</a>
+            </td>
+            <td class="nowrap">372.0 B</td>
+            <td class="nowrap">6b476ad6f22e3dcdc41b039687cf7dbe</td>
+        </tr>
+        <tr>
+            <td class="nowrap">
+                <a href='mini_vcf.vcf.gz.tbi'>mini_vcf.vcf.gz.tbi</a>
+            </td>
+            <td class="nowrap">126.0 B</td>
+            <td class="nowrap">2d6f17d3c4278adb9c8563e0d53b1d19</td>
+        </tr>
+        <tr>
+            <td class="nowrap">
+                <a href='statistics/'>statistics/</a>
+            </td>
+            <td class="nowrap"></td>
+            <td class="nowrap"></td>
+        </tr>
+    </tbody>
+    </table>
+
+    </body>
+</html>

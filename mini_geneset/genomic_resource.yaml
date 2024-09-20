@@ -1,0 +1,13 @@
+type: gene_set
+id: geneset1
+format: map
+filename: mini_geneset-map.txt
+web_label: geneset
+web_format_str: "key| (|count|): |desc"
+
+meta:
+  summary: |
+    mini gene set
+
+  description: |
+    description

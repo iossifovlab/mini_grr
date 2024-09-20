@@ -1,0 +1,255 @@
+
+
+<html>
+<head>
+<style>
+h3,h4 {
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+}
+table {
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+}
+th {
+    font-size: 20px;
+}
+td {
+    font-size: 18px;
+}
+
+
+</style>
+</head>
+    <body>
+
+    <h1>Resource</h1>
+    <div>
+        <table border="1">
+            <tr>
+                <td>
+                    <b>Id:</b>
+                </td>
+                <td>mini_positionscore_bedgraph_tabix_0</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Type:</b>
+                </td>
+                <td>position_score</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Version:</b>
+                </td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td><b>Summary:</b></td>
+                <td>
+                    <div>
+                        <template shadowrootmode="open"><p>0-based bedgraph position score</p>
+
+                        </template>
+                     </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Description:</b>
+                </td>
+                <td>
+                    <div>
+                        <template shadowrootmode="open"><p>my description</p>
+
+                        </template>
+                     </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>Labels:</b>
+                </td>
+                <td>
+                
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    
+
+<style>
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        justify-content: center;
+    }
+
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+
+    .close {
+        float: right;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+         color: #bbb;
+         text-decoration: none;
+         cursor: pointer;
+    }
+</style>
+
+
+    <script type="text/javascript">
+        function openModal(scoreId) {
+            var modal = document.getElementById("modal-" + scoreId);
+            modal.style.display = "flex";
+        }
+
+        function closeModal(scoreId) {
+            var modal = document.getElementById("modal-" + scoreId);
+            modal.style.display = "none";
+        }
+    </script>
+
+
+
+
+
+<h1>Scores</h1>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Type</th>
+        <th>Default annotation</th>
+        <th>Description</th>
+        <th>Histogram</th>
+        <th>Range</th>
+    </tr><tr class="score-definition">
+
+            <td>pos_bedgraph_0</td>
+
+            <td>float</td>
+
+            
+            <td>
+                <p>pos_bedgraph_0</p>
+            </td>
+
+            <td>
+                <div>a description</div>
+                
+                    <div style="color: rgb(145,145,145)">
+                        Small values desc: less
+                    </div>
+                
+                
+                    <div style="color: rgb(145,145,145)">
+                        Large values desc: more
+                    </div>
+                
+            </td>
+
+            <td>
+                
+                
+                <img src="statistics/histogram_pos_bedgraph_0.png"
+                    alt="HISTOGRAM FOR pos_bedgraph_0"
+                    title=pos_bedgraph_0
+                    width="200"
+                    style="cursor: pointer"
+                    onclick="openModal(title)"></td>
+
+            <td>
+                [0.100, 0.900]</td>
+
+        </tr><div id="modal-pos_bedgraph_0" class="modal">
+            <div style="padding: 10px 20px; background-color: #fff; height: fit-content; width: fit-content;">
+                <span title=pos_bedgraph_0 class="close" onclick="closeModal(title)">&times;</span>
+                <img class="modal-content" id="histogram-pos_bedgraph_0"
+                    src="statistics/histogram_pos_bedgraph_0.png"
+                    alt="HISTOGRAM FOR pos_bedgraph_0"
+                    title=pos_bedgraph_0
+                    width="200">
+            </div>
+        </div>
+</table>
+
+
+
+    <h1>Files</h1>
+    <table>
+    <thead>
+        <tr>
+            <th>Filename</th>
+            <th>Size</th>
+            <th>md5</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="nowrap">
+                <a href='dataprep.sh'>dataprep.sh</a>
+            </td>
+            <td class="nowrap">116.0 B</td>
+            <td class="nowrap">5c115e65c023cf3fd5fcaafcda49dc26</td>
+        </tr>
+        <tr>
+            <td class="nowrap">
+                <a href='genomic_resource.yaml'>genomic_resource.yaml</a>
+            </td>
+            <td class="nowrap">638.0 B</td>
+            <td class="nowrap">1b852457a5b49fb0d5175f736e2b8e0b</td>
+        </tr>
+        <tr>
+            <td class="nowrap">
+                <a href='mini_positionscore_bedgraph_0.bedgraph'>mini_positionscore_bedgraph_0.bedgraph</a>
+            </td>
+            <td class="nowrap">274.0 B</td>
+            <td class="nowrap">e52aff62f56b588ac7d3a5313c76e736</td>
+        </tr>
+        <tr>
+            <td class="nowrap">
+                <a href='mini_positionscore_bedgraph_0.bedgraph.gz'>mini_positionscore_bedgraph_0.bedgraph.gz</a>
+            </td>
+            <td class="nowrap">186.0 B</td>
+            <td class="nowrap">7b64f55bda1dbcad758d0a20c8bd7c06</td>
+        </tr>
+        <tr>
+            <td class="nowrap">
+                <a href='mini_positionscore_bedgraph_0.bedgraph.gz.tbi'>mini_positionscore_bedgraph_0.bedgraph.gz.tbi</a>
+            </td>
+            <td class="nowrap">123.0 B</td>
+            <td class="nowrap">ef4ef7fe2fbcc19f32aeaf53744802e6</td>
+        </tr>
+        <tr>
+            <td class="nowrap">
+                <a href='statistics/'>statistics/</a>
+            </td>
+            <td class="nowrap"></td>
+            <td class="nowrap"></td>
+        </tr>
+    </tbody>
+    </table>
+
+    </body>
+</html>

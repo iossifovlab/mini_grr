@@ -1,0 +1,51 @@
+---
+
+type: position_score
+
+table:
+  filename: mini_positionscore_bw_0.bw
+
+
+  ### the settings below should be removed
+  ### For now, GPF requires them, but we will remove the requirement soon.
+
+  header_mode: none
+
+  chrom:
+    index: 0
+  pos_begin:
+    index: 1
+  pos_end:
+    index: 2
+  ###
+
+# score values
+scores:
+  - id: pos_bw_0
+
+    ### This should be removed soon too.
+    type: float
+
+    desc: "bw score"
+    large_values_desc: "more"
+    small_values_desc: "less"
+
+    ### This should be removed soon too.
+    index: 3
+
+    histogram:
+      type: number
+      number_of_bins: 100
+      view_range:
+        min: 0.0
+        max: 1.0
+      y_log_scale: True
+
+
+meta:
+  summary: |
+    0-based bw position score
+
+  description: |
+    
+    bw description

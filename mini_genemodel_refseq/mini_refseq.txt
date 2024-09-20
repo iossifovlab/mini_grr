@@ -1,0 +1,1 @@
+1	transcriptA	chr1	+	0	10	1	10	1	0,	10,	0	geneA	none	none	-1,

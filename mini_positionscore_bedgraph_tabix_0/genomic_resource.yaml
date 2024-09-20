@@ -1,0 +1,42 @@
+---
+
+type: position_score
+
+table:
+  filename: mini_positionscore_bedgraph_0.bedgraph.gz
+  format: tabix
+  header_mode: none
+  zero_based: True
+
+  # defined by score_type
+  chrom:
+    index: 0
+  pos_begin:
+    index: 1
+  pos_end:
+    index: 2
+
+# score values
+scores:
+  - id: pos_bedgraph_0
+    type: float
+    desc: "a description"
+    large_values_desc: "more"
+    small_values_desc: "less"
+    index: 3
+    histogram:
+      type: number
+      number_of_bins: 100
+      view_range:
+        min: 0.0
+        max: 1.0
+      y_log_scale: True
+
+
+meta:
+  summary: |
+    0-based bedgraph position score
+
+  description: |
+    
+    my description

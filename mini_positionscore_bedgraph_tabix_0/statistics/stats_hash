@@ -1,0 +1,47 @@
+{
+  "config": {
+    "histograms": [
+      {
+        "type": "number",
+        "view_range": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "number_of_bins": 100,
+        "x_log_scale": false,
+        "y_log_scale": true,
+        "x_min_log": null
+      }
+    ],
+    "table": {
+      "config": {
+        "filename": "mini_positionscore_bedgraph_0.bedgraph.gz",
+        "format": "tabix",
+        "header_mode": "none",
+        "zero_based": true,
+        "chrom": {
+          "index": 0
+        },
+        "pos_begin": {
+          "index": 1
+        },
+        "pos_end": {
+          "index": 2
+        }
+      },
+      "files_md5": {
+        "mini_positionscore_bedgraph_0.bedgraph.gz": "7b64f55bda1dbcad758d0a20c8bd7c06",
+        "mini_positionscore_bedgraph_0.bedgraph.gz.tbi": "ef4ef7fe2fbcc19f32aeaf53744802e6"
+      }
+    }
+  },
+  "score_config": [
+    {
+      "id": "pos_bedgraph_0",
+      "type": "float",
+      "name": null,
+      "index": 3,
+      "na_values": "['', '.', 'NA', 'nan']"
+    }
+  ]
+}
