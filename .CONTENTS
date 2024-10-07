@@ -345,12 +345,12 @@
   - md5: 1c826119016028bbc16e0bac271c3aa1
     name: genomic_resource.yaml
     size: 150
-  - md5: 0c6b5be9fee9a9880b650d1a4eef3c72
+  - md5: 0873a3187bd75bb7c5f20d37d510157e
     name: index.html
-    size: 16938
-  - md5: d49dfd2e100f36f127ca0c4cbb57c3ae
+    size: 8602
+  - md5: b312d9bf756de73ba58704e89230c63c
     name: mini_pipeline.yaml
-    size: 1304
+    size: 1382
   - md5: 6a99c575ab87f8c7d1ed1e52e7e349ce
     name: statistics/stats_hash
     size: 11
@@ -547,9 +547,6 @@
     type: position_score
   id: mini_positionscore_bw
   manifest:
-  - md5: c303d55dbf3027f4e5dadd219bd50614
-    name: bedGraphToBigWig
-    size: 6618512
   - md5: b7ad723cdc361386f28db6f3c3f8c2a8
     name: chrom.sizes
     size: 16
@@ -559,9 +556,9 @@
   - md5: 2278a4968af41be1f7eb8f2173ca79fd
     name: genomic_resource.yaml
     size: 758
-  - md5: 7fe4d3cfffe3e0468d60b4837b0de3c3
+  - md5: 7d40a5347877ba8a6724aff6f92ae450
     name: index.html
-    size: 6590
+    size: 6336
   - md5: 41ca2ab0b1e7ef18110ca3f66b1f7a55
     name: mini_positionscore_bw_0.bedgraph
     size: 54
@@ -1419,9 +1416,9 @@
   - md5: d17cb8d4a84cb16b4b1c90221941c3eb
     name: statistics/histogram_vcf_1_int.yaml
     size: 318
-  - md5: 9063328d15be7e7fea7d6f9c82c3d358
+  - md5: 3466e25c20349df665478615319f9e65
     name: statistics/histogram_vcf_1_str.png
-    size: 9008
+    size: 9245
   - md5: ca007d88468a20ae71bff876ade32458
     name: statistics/histogram_vcf_1_str.yaml
     size: 147
