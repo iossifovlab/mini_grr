@@ -1,12 +1,12 @@
 - md5: 2fedcb2bbba127cfd800dece7376ca44
   name: genomic_resource.yaml
   size: 601
-- md5: 3bafc09d518fc838f5a2a855aa8d9a53
-  name: index.html
-  size: 5288
 - md5: 2283da2edfb2c8bac928db3f4f689785
   name: mini_positionscore_tsv_0.tsv
   size: 234
+- md5: 68e8adbf69f12ba9ae8585b5af1eff3b
+  name: scores_graph.png
+  size: 19302
 - md5: 5f13e54a2783649d486acdbdc1bec47d
   name: statistics/histogram_0based_tsv.png
   size: 10396

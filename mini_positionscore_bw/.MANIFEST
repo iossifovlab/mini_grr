@@ -7,15 +7,15 @@
 - md5: 2278a4968af41be1f7eb8f2173ca79fd
   name: genomic_resource.yaml
   size: 758
-- md5: 7d40a5347877ba8a6724aff6f92ae450
-  name: index.html
-  size: 6336
 - md5: 41ca2ab0b1e7ef18110ca3f66b1f7a55
   name: mini_positionscore_bw_0.bedgraph
   size: 54
 - md5: 266644975a85c05407228c73ca9c76fe
   name: mini_positionscore_bw_0.bw
   size: 12944
+- md5: 92ea6f79cc0b3f5291e31a603aaa7528
+  name: scores_graph.png
+  size: 21031
 - md5: 06b6d4a2da4a03f2865a6dd8f36482ec
   name: sorted_mini_positionscore_bw_0.bedgraph
   size: 55

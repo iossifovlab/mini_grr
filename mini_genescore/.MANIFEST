@@ -1,9 +1,6 @@
 - md5: b5f5a0e41bcba1701e8f37c10a0ce84b
   name: genomic_resource.yaml
   size: 382
-- md5: f8afed654a46ff8378332b428bec7737
-  name: index.html
-  size: 5427
 - md5: 65492a9015b3a3c529fffebe562567fd
   name: mini_genescore.csv
   size: 108

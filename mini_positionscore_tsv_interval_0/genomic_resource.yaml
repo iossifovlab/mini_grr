@@ -4,7 +4,7 @@ type: position_score
 
 table:
   filename: mini_positionscore_interval_tsv_0.tsv
- # header_mode: none
+  header_mode: none
   zero_based: True
 
   # defined by score_type

@@ -4,9 +4,6 @@
 - md5: 911c391f4317e42510cecae4fd0ce6a9
   name: genomic_resource.yaml
   size: 227
-- md5: 551a8d57cf7c06f1b3ef07735eb3893f
-  name: index.html
-  size: 9097
 - md5: 145d88310a5e372a824c7b203a7bf5ab
   name: mini_vcf.header.vcf
   size: 370

@@ -4,12 +4,12 @@
 - md5: 862d3e678e7a17f0a9c0cde9c0dc6692
   name: histogram_pos_tsv_1.png
   size: 10143
-- md5: d480022117dd7a34015760f48959b8ef
-  name: index.html
-  size: 5624
 - md5: aa21e2ddc0c4264c36aa14055286c6eb
   name: mini_positionscore_tsv_1.tsv
   size: 236
+- md5: eecae20162be6f3a48bd34930f966601
+  name: scores_graph.png
+  size: 19086
 - md5: a49f9269adb15f8f836b44d3614cf369
   name: statistics/histogram_1based_tsv.png
   size: 10249

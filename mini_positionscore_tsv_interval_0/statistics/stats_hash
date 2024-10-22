@@ -16,6 +16,7 @@
     "table": {
       "config": {
         "filename": "mini_positionscore_interval_tsv_0.tsv",
+        "header_mode": "none",
         "zero_based": true,
         "chrom": {
           "index": 0

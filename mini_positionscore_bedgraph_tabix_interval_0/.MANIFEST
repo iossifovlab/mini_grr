@@ -4,9 +4,6 @@
 - md5: f8caab8c7c8ab29400ebd48227347b45
   name: genomic_resource.yaml
   size: 661
-- md5: 361baf8f765356ef631b0b6d62ab1bd7
-  name: index.html
-  size: 6345
 - md5: 41ca2ab0b1e7ef18110ca3f66b1f7a55
   name: mini_positionscore_interval_bedgraph_0.bedgraph
   size: 54
@@ -16,6 +13,9 @@
 - md5: 29aa4ab2e6e6e3fc26259554cb7a9bf3
   name: mini_positionscore_interval_bedgraph_0.bedgraph.gz.tbi
   size: 123
+- md5: 731985589b524da3ba3b5c04d8587598
+  name: scores_graph.png
+  size: 23565
 - md5: 8cd2f890b7bf1fb5d514fe96ecf6b86a
   name: statistics/histogram_0based_bedgraph.png
   size: 11127
