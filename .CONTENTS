@@ -1321,6 +1321,68 @@
       summary: '1-based vcf allele score
 
         '
+    table:
+      filename: mini_vcf.vcf.gz
+      index_filename: mini_vcf.vcf.gz.tbi
+    type: allele_score
+  id: mini_vcf_all_wmissing
+  manifest:
+  - md5: c106765c88b8bf4cbf618498b821313c
+    name: dataprep.sh
+    size: 652
+  - md5: 911c391f4317e42510cecae4fd0ce6a9
+    name: genomic_resource.yaml
+    size: 227
+  - md5: 145d88310a5e372a824c7b203a7bf5ab
+    name: mini_vcf.header.vcf
+    size: 370
+  - md5: 42e6b6414bd6926869d7a6138862c939
+    name: mini_vcf.header.vcf.gz
+    size: 264
+  - md5: 4cb176febbc8c26d717a6c6e67b9c905
+    name: mini_vcf.header.vcf.gz.tbi
+    size: 72
+  - md5: bec68e83e498a32b7511c618091b6f4a
+    name: mini_vcf.vcf
+    size: 512
+  - md5: fd9d404571b2f3c2e1bdab6148c9d773
+    name: mini_vcf.vcf.gz
+    size: 366
+  - md5: c7b4f72628af17d6efea0bb3e4a50ad7
+    name: mini_vcf.vcf.gz.tbi
+    size: 126
+  - md5: afbb1807d0a4f84e70ded8589c3b7c42
+    name: statistics/histogram_vcf_1_float.png
+    size: 11953
+  - md5: b40e7ab0a53db83b97b539335d15feee
+    name: statistics/histogram_vcf_1_float.yaml
+    size: 2863
+  - md5: 10457fac346e1699386e636515f20eaa
+    name: statistics/histogram_vcf_1_int.png
+    size: 11552
+  - md5: 92a1c68452f1c8a4391a87b94ce49da1
+    name: statistics/histogram_vcf_1_int.yaml
+    size: 1579
+  - md5: 1a614103b01620cbb924c7fb39062ad9
+    name: statistics/histogram_vcf_1_str.png
+    size: 9614
+  - md5: a31e1456095f2e2d7597b7a5bebcfc4b
+    name: statistics/histogram_vcf_1_str.yaml
+    size: 107
+  - md5: 13f5e4abfe6f88c6e308ead94d552e28
+    name: statistics/stats_hash
+    size: 759
+  version: '0'
+- config:
+    meta:
+      description: 'a description
+
+        '
+      labels:
+        reference_genome: mini_genome
+      summary: '1-based vcf allele score
+
+        '
     scores:
     - column_name: vcf_1_int
       desc: 'description
