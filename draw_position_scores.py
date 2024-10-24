@@ -26,9 +26,6 @@ for ch in ref.chromosomes:
 for gr in GRR.get_all_resources():
 	if gr.get_type() != "position_score":
 		continue
-	if not gr.get_id().startswith('mini'): 
-		continue
-	print(gr.get_id())
 	sc = PositionScore(gr)
 	sc.open()
 	pylab.figure()
@@ -41,20 +38,18 @@ for gr in GRR.get_all_resources():
 		chrom_len = ref.get_chrom_length(ch)
 		all_score_names = sc.get_all_scores()
 		for p in range(1, chrom_len+1):
-			print(ch, p, sc.fetch_scores(ch, p))
 			scores = sc.fetch_scores(ch, p)
-			if not (scores is None):
+			if scores is not None:
 				assert len(scores) == len(all_score_names)
 				for score_name, score in zip(all_score_names, scores):
-					if score:
+					if score is not None:
 						xs[score_name].append(p)
 						ys[score_name].append(score)
 		for score_name in all_score_names:
-			pylab.scatter(xs[score_name],ys[score_name], label=score_name)
+			pylab.scatter(xs[score_name], ys[score_name], label=score_name)
 		pylab.xlim([1-0.5, chrom_len+0.5])
-		pylab.xticks(range(1,chrom_len+1))
+		pylab.xticks(range(1, chrom_len+1))
 		pylab.legend()
-		print(xs, ys)
 	pylab.savefig(f"{gr.get_id()}/scores_graph.png")
 
 
