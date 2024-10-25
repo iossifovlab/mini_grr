@@ -1,1 +1,5 @@
 - position_score: mini_positionscore_bedgraph_tabix_0
+- position_score: mini_positionscore_tabix_0
+- position_score: mini_positionscore_tabix_1
+
+
