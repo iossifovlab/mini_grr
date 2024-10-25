@@ -1,0 +1,7 @@
+config:
+  type: categorical
+  value_order: null
+  y_log_scale: false
+values:
+  str1: 1
+  str3: 1
