@@ -1,0 +1,15 @@
+type: allele_score 
+
+table:
+  filename: mini_vcf.vcf.gz
+  index_filename: mini_vcf.vcf.gz.tbi
+
+meta:
+
+  summary: |
+      1-based vcf allele score
+  description: |
+      a description
+
+  labels:
+    reference_genome: mini_genome

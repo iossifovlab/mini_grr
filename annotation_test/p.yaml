@@ -1,7 +1,5 @@
 - position_score: mini_positionscore_bedgraph_tabix_0
-- effect_annotator:
-    genome: mini_genome 
-    gene_models: mini_genemodel_refseq
-- effect_annotator:
-    genome: mini_genome 
-    gene_models: mini_genemodel_gtf
+- position_score: mini_positionscore_tabix_0
+- position_score: mini_positionscore_tabix_1
+
+

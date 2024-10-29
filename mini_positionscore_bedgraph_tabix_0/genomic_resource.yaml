@@ -36,8 +36,9 @@ scores:
 meta:
   summary: |
     0-based bedgraph position score
-    ![The score graphs](./scores_graph.png "SSSS")
+    
 
   description: |
     
     my description
+    ![The score graphs](./scores_graph.png "SSSS")

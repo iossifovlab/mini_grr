@@ -1,0 +1,38 @@
+{
+  "config": {
+    "histograms": [],
+    "table": {
+      "config": {
+        "filename": "mini_vcf.vcf.gz",
+        "index_filename": "mini_vcf.vcf.gz.tbi"
+      },
+      "files_md5": {
+        "mini_vcf.vcf.gz": "fd9d404571b2f3c2e1bdab6148c9d773",
+        "mini_vcf.vcf.gz.tbi": "c7b4f72628af17d6efea0bb3e4a50ad7"
+      }
+    }
+  },
+  "score_config": [
+    {
+      "id": "vcf_1_int",
+      "type": "int",
+      "name": "vcf_1_int",
+      "index": null,
+      "na_values": "[]"
+    },
+    {
+      "id": "vcf_1_float",
+      "type": "float",
+      "name": "vcf_1_float",
+      "index": null,
+      "na_values": "[]"
+    },
+    {
+      "id": "vcf_1_str",
+      "type": "str",
+      "name": "vcf_1_str",
+      "index": null,
+      "na_values": "[]"
+    }
+  ]
+}
