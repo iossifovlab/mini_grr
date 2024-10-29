@@ -1,0 +1,48 @@
+---
+
+type: position_score
+
+table:
+  filename: mini_positionscore_tsv_1.tsv
+  header_mode: none
+
+  # defined by score_type
+  chrom:
+    index: 0
+  pos_begin:
+    index: 1
+  pos_end:
+    index: 1
+
+# score values
+scores:
+  - id: pos_tsv_1
+    type: float
+    desc: "a description"
+    large_values_desc: "more"
+    small_values_desc: "less"
+    index: 2
+    histogram:
+      type: number
+      number_of_bins: 100
+      view_range:
+        min: 0.0
+        max: 1.0
+      y_log_scale: True
+
+  - id: pos_tsv_1_st
+    type: str
+    desc: "a description"
+    index: 3
+    histogram:
+      type: categorical
+
+
+meta:
+  summary: |
+    1-based tsv position score
+
+  description: |
+    
+    my description
+    ![My Position Score Image](histogram_pos_tsv_1.png)

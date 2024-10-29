@@ -1117,6 +1117,85 @@
     meta:
       description: '
 
+        my description
+
+        ![My Position Score Image](histogram_pos_tsv_1.png)'
+      summary: '1-based tsv position score
+
+        '
+    scores:
+    - desc: a description
+      histogram:
+        number_of_bins: 100
+        type: number
+        view_range:
+          max: 1.0
+          min: 0.0
+        y_log_scale: true
+      id: pos_tsv_1
+      index: 2
+      large_values_desc: more
+      small_values_desc: less
+      type: float
+    - desc: a description
+      histogram:
+        type: categorical
+      id: pos_tsv_1_st
+      index: 3
+      type: str
+    table:
+      chrom:
+        index: 0
+      filename: mini_positionscore_tsv_1.tsv
+      header_mode: none
+      pos_begin:
+        index: 1
+      pos_end:
+        index: 1
+    type: position_score
+  id: mini_positionscore_tsv_1_twoscores
+  manifest:
+  - md5: e458d67572a36892c665e494dc81940b
+    name: genomic_resource.yaml
+    size: 750
+  - md5: 4beb88220233e7c3bad807be63b7dd87
+    name: mini_positionscore_tsv_1.tsv
+    size: 324
+  - md5: b0182f4c41b9e7b45c4bbc98875d9287
+    name: scores_graph.png
+    size: 20640
+  - md5: a49f9269adb15f8f836b44d3614cf369
+    name: statistics/histogram_1based_tsv.png
+    size: 10249
+  - md5: 28c9fda81d22d644ae4082a87cea9246
+    name: statistics/histogram_1based_tsv.yaml
+    size: 1453
+  - md5: 6da5739ad316c997c3dabb3ba85cb022
+    name: statistics/histogram_a_pos_score.png
+    size: 10585
+  - md5: 28c9fda81d22d644ae4082a87cea9246
+    name: statistics/histogram_a_pos_score.yaml
+    size: 1453
+  - md5: e1703b42ed50bdfc007a3263f197f10a
+    name: statistics/histogram_pos_tsv_1.png
+    size: 10367
+  - md5: 28c9fda81d22d644ae4082a87cea9246
+    name: statistics/histogram_pos_tsv_1.yaml
+    size: 1453
+  - md5: 405e94d051cd7a72fb5a2beee93b8848
+    name: statistics/histogram_pos_tsv_1_st.png
+    size: 9271
+  - md5: 3583f2bdea8ae41b08504b48fef1b7c5
+    name: statistics/histogram_pos_tsv_1_st.yaml
+    size: 96
+  - md5: b0f5b87aba4d49f4946e8b667bc82091
+    name: statistics/stats_hash
+    size: 1072
+  version: '0'
+- config:
+    meta:
+      description: '
+
         my description'
       summary: '0-based tsv position score (interval)
 

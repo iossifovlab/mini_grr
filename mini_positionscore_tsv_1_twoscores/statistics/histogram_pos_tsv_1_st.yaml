@@ -1,0 +1,7 @@
+config:
+  type: categorical
+  value_order: []
+  y_log_scale: false
+values:
+  bad: 12
+  good: 8
