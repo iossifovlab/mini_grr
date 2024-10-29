@@ -1,4 +1,41 @@
 - config:
+    filename: mini_gtf.gtf
+    format: gtf
+    meta:
+      description: '
+
+        my description
+
+        '
+      summary: 'gtf gene model
+
+        '
+    type: gene_models
+  id: mini_genemodel_gtf
+  manifest:
+  - md5: 0ccbcb2a83d37686eeebad33f6be6609
+    name: dataprep.sh
+    size: 28
+  - md5: 4eaaf0e86f52df49e297016cd0379faa
+    name: genomic_resource.yaml
+    size: 201
+  - md5: a843bf516e89f9d4192da1e8f70b0647
+    name: mini_gtf.gtf
+    size: 1276
+  - md5: 1b40b51ef56a01ced4d3ded878666956
+    name: mini_refseq.txt
+    size: 61
+  - md5: 852ea4a05c2031084d480387aa2a3445
+    name: statistics/stats.yaml
+    size: 309
+  - md5: cad58b6ea17ecce02b9e96d5fda46f4f
+    name: statistics/stats_hash
+    size: 118
+  - md5: f8bb7b03823db15e82bb58634e6c943b
+    name: to_gtf.py
+    size: 465
+  version: '0'
+- config:
     filename: mini_refseq.txt
     format: refseq
     meta:
@@ -372,24 +409,24 @@
     type: position_score
   id: mini_positionscore_bedgraph_tabix_0
   manifest:
-  - md5: ad805d0f08674a3595f016c4043e77ab
+  - md5: 5c115e65c023cf3fd5fcaafcda49dc26
     name: dataprep.sh
-    size: 167
+    size: 116
   - md5: b9d94a83e516b80d4cfef7110c2b9eb2
     name: genomic_resource.yaml
     size: 689
-  - md5: e52aff62f56b588ac7d3a5313c76e736
+  - md5: 3a504c101654c70e823756a80d1eb9b2
     name: mini_positionscore_bedgraph_0.bedgraph
-    size: 274
-  - md5: 7b64f55bda1dbcad758d0a20c8bd7c06
+    size: 276
+  - md5: e6bea7850c909bd34596115eec339b00
     name: mini_positionscore_bedgraph_0.bedgraph.gz
-    size: 186
-  - md5: ef4ef7fe2fbcc19f32aeaf53744802e6
+    size: 191
+  - md5: 0a26f3e21972feef1de3e5da9341a7b1
     name: mini_positionscore_bedgraph_0.bedgraph.gz.tbi
     size: 123
-  - md5: 4500018814e15f3f9411788ac8b51eb8
+  - md5: f5daddb37bdce6c20e7a5c09fd8471f5
     name: scores_graph.png
-    size: 20747
+    size: 22257
   - md5: cba244d9ac48729db30fa8426201a9ae
     name: statistics/histogram_0based_bedgraph.png
     size: 11132
@@ -402,13 +439,13 @@
   - md5: 28c9fda81d22d644ae4082a87cea9246
     name: statistics/histogram_a_pos_score.yaml
     size: 1453
-  - md5: 8b5d7d2236e17921ec410b18d53752d3
+  - md5: f12c1afc90b353bbd175c71ca4e814f6
     name: statistics/histogram_pos_bedgraph_0.png
-    size: 11187
-  - md5: a21ee600819d6cf8a276e91d491ffed8
+    size: 11170
+  - md5: 28c9fda81d22d644ae4082a87cea9246
     name: statistics/histogram_pos_bedgraph_0.yaml
     size: 1453
-  - md5: f521825e4aa759530272496215deb132
+  - md5: 289a87fe10e4abb63d4049407035fc5e
     name: statistics/stats_hash
     size: 1023
   version: '0'
@@ -463,9 +500,9 @@
   - md5: 29aa4ab2e6e6e3fc26259554cb7a9bf3
     name: mini_positionscore_interval_bedgraph_0.bedgraph.gz.tbi
     size: 123
-  - md5: 731985589b524da3ba3b5c04d8587598
+  - md5: f64796440607e61bad0ab3e608dbfd70
     name: scores_graph.png
-    size: 23565
+    size: 23914
   - md5: 8cd2f890b7bf1fb5d514fe96ecf6b86a
     name: statistics/histogram_0based_bedgraph.png
     size: 11127
@@ -543,9 +580,9 @@
   - md5: 266644975a85c05407228c73ca9c76fe
     name: mini_positionscore_bw_0.bw
     size: 12944
-  - md5: 92ea6f79cc0b3f5291e31a603aaa7528
+  - md5: c6fd10d020d2d6880929ea94841685c6
     name: scores_graph.png
-    size: 21031
+    size: 21344
   - md5: 06b6d4a2da4a03f2865a6dd8f36482ec
     name: sorted_mini_positionscore_bw_0.bedgraph
     size: 55
@@ -616,9 +653,9 @@
   - md5: f4ba3ad33d74415c50b41d2f0972f860
     name: mini_positionscore_tabix_0.tsv.gz.tbi
     size: 121
-  - md5: 22c2fcb729cb9c9f147706b272d88e00
+  - md5: fb26a2c4893639184d61c9d4f814c958
     name: scores_graph.png
-    size: 19704
+    size: 21265
   - md5: 5f13e54a2783649d486acdbdc1bec47d
     name: statistics/histogram_0based_tsv.png
     size: 10396
@@ -705,9 +742,9 @@
   - md5: 3e87d3b1263695c09852d633c92c0532
     name: mini_positionscore_tabix_1.tsv.gz.tbi
     size: 118
-  - md5: 63201c61452b7683cdcc582265df2b9e
+  - md5: 1aab3388d80ecefca3443e0a612a6314
     name: scores_graph.png
-    size: 19596
+    size: 21039
   - md5: a49f9269adb15f8f836b44d3614cf369
     name: statistics/histogram_1based_tsv.png
     size: 10249
@@ -787,9 +824,9 @@
   - md5: 29aa4ab2e6e6e3fc26259554cb7a9bf3
     name: mini_positionscore_interval_tabix_0.tsv.gz.tbi
     size: 123
-  - md5: 9e0e3f7438649a3ccce58ee18aedc44b
+  - md5: ad360264ffa4beaca23f7c12482c7f12
     name: scores_graph.png
-    size: 22053
+    size: 22398
   - md5: b1c28d9eef0fc3f9934e4d9ec943975f
     name: statistics/histogram_0based_tsv.png
     size: 10254
@@ -880,9 +917,9 @@
   - md5: b43a279e596d677d301431e84cb395ef
     name: mini_positionscore_interval_tabix_1.tsv.gz.tbi
     size: 121
-  - md5: fae80f62275a1d6edad3dce1f74a8b68
+  - md5: 32bb7aee2f9b0945f205c2cab343030b
     name: scores_graph.png
-    size: 21792
+    size: 22143
   - md5: b1c28d9eef0fc3f9934e4d9ec943975f
     name: statistics/histogram_0based_tsv.png
     size: 10254
@@ -975,9 +1012,9 @@
   - md5: 2283da2edfb2c8bac928db3f4f689785
     name: mini_positionscore_tsv_0.tsv
     size: 234
-  - md5: 68e8adbf69f12ba9ae8585b5af1eff3b
+  - md5: d966e56a03c5ac87d0bc12a608312e5d
     name: scores_graph.png
-    size: 19302
+    size: 20159
   - md5: 5f13e54a2783649d486acdbdc1bec47d
     name: statistics/histogram_0based_tsv.png
     size: 10396
@@ -1051,9 +1088,9 @@
   - md5: aa21e2ddc0c4264c36aa14055286c6eb
     name: mini_positionscore_tsv_1.tsv
     size: 236
-  - md5: eecae20162be6f3a48bd34930f966601
+  - md5: b0182f4c41b9e7b45c4bbc98875d9287
     name: scores_graph.png
-    size: 19086
+    size: 20640
   - md5: a49f9269adb15f8f836b44d3614cf369
     name: statistics/histogram_1based_tsv.png
     size: 10249
@@ -1117,9 +1154,9 @@
   - md5: 41ca2ab0b1e7ef18110ca3f66b1f7a55
     name: mini_positionscore_interval_tsv_0.tsv
     size: 54
-  - md5: d2e6be2b221051b5acfd99c0e5f166db
+  - md5: bbd8c5e24b0746b35e3a6491ad1c9a80
     name: scores_graph.png
-    size: 21589
+    size: 21894
   - md5: b1c28d9eef0fc3f9934e4d9ec943975f
     name: statistics/histogram_0based_tsv.png
     size: 10254
@@ -1200,9 +1237,9 @@
   - md5: bb4db0117b174a1114fc1ae0143a8fb6
     name: mini_positionscore_interval_tsv_1.tsv
     size: 54
-  - md5: 51ef6fc9a222c8a0d022ff1a82973e4f
+  - md5: c04893e49d92a82663daf3018262ef2f
     name: scores_graph.png
-    size: 21318
+    size: 21640
   - md5: b1c28d9eef0fc3f9934e4d9ec943975f
     name: statistics/histogram_0based_tsv.png
     size: 10254

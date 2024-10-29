@@ -1,21 +1,21 @@
-- md5: ad805d0f08674a3595f016c4043e77ab
+- md5: 5c115e65c023cf3fd5fcaafcda49dc26
   name: dataprep.sh
-  size: 167
+  size: 116
 - md5: b9d94a83e516b80d4cfef7110c2b9eb2
   name: genomic_resource.yaml
   size: 689
-- md5: e52aff62f56b588ac7d3a5313c76e736
+- md5: 3a504c101654c70e823756a80d1eb9b2
   name: mini_positionscore_bedgraph_0.bedgraph
-  size: 274
-- md5: 7b64f55bda1dbcad758d0a20c8bd7c06
+  size: 276
+- md5: e6bea7850c909bd34596115eec339b00
   name: mini_positionscore_bedgraph_0.bedgraph.gz
-  size: 186
-- md5: ef4ef7fe2fbcc19f32aeaf53744802e6
+  size: 191
+- md5: 0a26f3e21972feef1de3e5da9341a7b1
   name: mini_positionscore_bedgraph_0.bedgraph.gz.tbi
   size: 123
-- md5: 4500018814e15f3f9411788ac8b51eb8
+- md5: f5daddb37bdce6c20e7a5c09fd8471f5
   name: scores_graph.png
-  size: 20747
+  size: 22257
 - md5: cba244d9ac48729db30fa8426201a9ae
   name: statistics/histogram_0based_bedgraph.png
   size: 11132
@@ -28,12 +28,12 @@
 - md5: 28c9fda81d22d644ae4082a87cea9246
   name: statistics/histogram_a_pos_score.yaml
   size: 1453
-- md5: 8b5d7d2236e17921ec410b18d53752d3
+- md5: f12c1afc90b353bbd175c71ca4e814f6
   name: statistics/histogram_pos_bedgraph_0.png
-  size: 11187
-- md5: a21ee600819d6cf8a276e91d491ffed8
+  size: 11170
+- md5: 28c9fda81d22d644ae4082a87cea9246
   name: statistics/histogram_pos_bedgraph_0.yaml
   size: 1453
-- md5: f521825e4aa759530272496215deb132
+- md5: 289a87fe10e4abb63d4049407035fc5e
   name: statistics/stats_hash
   size: 1023

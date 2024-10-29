@@ -1,0 +1,11 @@
+##description: GTF format dump for gene models "."
+##provider: GPF
+##format: gtf
+##date: 2024-10-29
+chr1	.	gene	1	10	.	+	.	gene_id "geneA";gene_version ".";gene_name "geneA";gene_source ".";gene_biotype ".";
+chr1	.	transcript	1	10	.	+	.	transcript_id "transcriptA";score "0";exonCount "1";cdsStartStat "none";cdsEndStat "none";exonFrames "-1,";gene_name "geneA";gene_id "geneA";
+chr1	.	exon	1	10	.	+	.	transcript_id "transcriptA";score "0";exonCount "1";cdsStartStat "none";cdsEndStat "none";exonFrames "-1,";gene_name "geneA";gene_id "geneA";exon_number "1";
+chr1	.	UTR	1	1	.	+	.	transcript_id "transcriptA";score "0";exonCount "1";cdsStartStat "none";cdsEndStat "none";exonFrames "-1,";gene_name "geneA";gene_id "geneA";
+chr1	.	CDS	2	7	.	+	0	transcript_id "transcriptA";score "0";exonCount "1";cdsStartStat "none";cdsEndStat "none";exonFrames "-1,";gene_name "geneA";gene_id "geneA";exon_number "1";
+chr1	.	start_codon	2	4	.	+	0	transcript_id "transcriptA";score "0";exonCount "1";cdsStartStat "none";cdsEndStat "none";exonFrames "-1,";gene_name "geneA";gene_id "geneA";exon_number "1";
+chr1	.	stop_codon	8	10	.	+	0	transcript_id "transcriptA";score "0";exonCount "1";cdsStartStat "none";cdsEndStat "none";exonFrames "-1,";gene_name "geneA";gene_id "geneA";exon_number "1";
