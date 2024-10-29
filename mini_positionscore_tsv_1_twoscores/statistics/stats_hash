@@ -33,7 +33,7 @@
         }
       },
       "files_md5": {
-        "mini_positionscore_tsv_1.tsv": "4beb88220233e7c3bad807be63b7dd87"
+        "mini_positionscore_tsv_1.tsv": "8b14183dc4dcd44cddb6b7e770162866"
       }
     }
   },
@@ -50,7 +50,7 @@
       "type": "str",
       "name": null,
       "index": 3,
-      "na_values": "[]"
+      "na_values": "['']"
     }
   ]
 }

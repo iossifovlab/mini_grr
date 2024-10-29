@@ -34,6 +34,7 @@ scores:
     type: str
     desc: "a description"
     index: 3
+    na_values: [""]
     histogram:
       type: categorical
 

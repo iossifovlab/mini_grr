@@ -3,5 +3,5 @@ config:
   value_order: []
   y_log_scale: false
 values:
-  bad: 12
-  good: 8
+  bad: 11
+  good: 7
