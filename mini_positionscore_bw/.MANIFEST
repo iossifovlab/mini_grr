@@ -4,18 +4,18 @@
 - md5: 15b3d3034634b2686c11d21d1e5c0fb4
   name: dataprep.sh
   size: 191
-- md5: 2278a4968af41be1f7eb8f2173ca79fd
+- md5: 21925e04b833f5244022fb848e889b1e
   name: genomic_resource.yaml
-  size: 758
+  size: 809
 - md5: 41ca2ab0b1e7ef18110ca3f66b1f7a55
   name: mini_positionscore_bw_0.bedgraph
   size: 54
 - md5: 266644975a85c05407228c73ca9c76fe
   name: mini_positionscore_bw_0.bw
   size: 12944
-- md5: c6fd10d020d2d6880929ea94841685c6
+- md5: 523e006834e2dbcf6249df9f285207b0
   name: scores_graph.png
-  size: 21344
+  size: 25577
 - md5: 06b6d4a2da4a03f2865a6dd8f36482ec
   name: sorted_mini_positionscore_bw_0.bedgraph
   size: 55
