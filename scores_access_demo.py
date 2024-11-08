@@ -4,8 +4,8 @@ from collections import defaultdict
 import os
 import pylab
 from dae.genomic_resources import build_genomic_resource_repository
-from dae.genomic_resources.reference_genome import build_reference_genome_from_resource
-from dae.genomic_resources.genomic_scores import PositionScore, NPScore
+from dae.genomic_resources.reference_genome import build_reference_genome_from_resource_id
+from dae.genomic_resources.genomic_scores import build_score_from_resource_id, PositionScore, NPScore
 
 
 # GRR = build_genomic_resource_repository()
@@ -16,13 +16,16 @@ GRR = build_genomic_resource_repository({
 })
 
 
-ref = build_reference_genome_from_resource(GRR.get_resource("mini_genome")).open()
+ref = build_reference_genome_from_resource_id("mini_genome", GRR).open()
 for ch in ref.chromosomes:
     print(ch, ref.get_chrom_length(ch))
 print("The sequence is:", ref.get_sequence("chr1", 5, 8))
 
 
-PS = PositionScore(GRR.get_resource("mini_positionscore_tsv_1_twoscores")).open()
+
+PS = build_score_from_resource_id("mini_positionscore_tsv_1_twoscores", GRR).open()
+assert isinstance(PS, PositionScore)
+
 for score in PS.get_all_scores():
     print(f"Score {score} of type {PS.get_score_definition(score).value_type}")
     for ch in ref.chromosomes:
@@ -30,8 +33,11 @@ for score in PS.get_all_scores():
 
         for p in range(1, ref.get_chrom_length(ch)+1):
             print("\t\t", p, PS.fetch_scores("chr1", p, [score]))
-NP = NPScore(GRR.get_resource("mini_npscore_tabix_0"))
 
+
+            
+NP = build_score_from_resource_id("mini_npscore_tabix_0", GRR).open()
+assert isinstance(NP, NPScore)
 
 
 # for gr in GRR.get_all_resources():

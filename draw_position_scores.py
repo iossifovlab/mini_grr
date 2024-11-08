@@ -4,7 +4,7 @@ from collections import defaultdict
 import os
 import pylab
 from dae.genomic_resources import build_genomic_resource_repository
-from dae.genomic_resources.reference_genome import build_reference_genome_from_resource
+from dae.genomic_resources.reference_genome import build_reference_genome_from_resource_id
 from dae.genomic_resources.genomic_scores import PositionScore
 
 
@@ -15,9 +15,9 @@ GRR = build_genomic_resource_repository({
     "directory": os.getcwd() 
 })
 
-ref_gr = GRR.get_resource("mini_genome")
-ref = build_reference_genome_from_resource(ref_gr)
-ref.open()
+
+ref = build_reference_genome_from_resource_id("mini_genome", GRR).open()
+
 
 for ch in ref.chromosomes:
     print(ch, ref.get_chrom_length(ch))
