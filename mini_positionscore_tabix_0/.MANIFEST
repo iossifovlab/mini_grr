@@ -1,9 +1,9 @@
 - md5: a27522749e51d014e5ce4c39bd6f53e7
   name: dataprep.sh
   size: 386
-- md5: b2bca32e23b014e17e6c08ebadf56bf7
+- md5: e217a75902dc406dbe9dc9728c8a43f2
   name: genomic_resource.yaml
-  size: 624
+  size: 675
 - md5: 2283da2edfb2c8bac928db3f4f689785
   name: mini_positionscore_tabix_0.tsv
   size: 234
@@ -13,9 +13,9 @@
 - md5: f4ba3ad33d74415c50b41d2f0972f860
   name: mini_positionscore_tabix_0.tsv.gz.tbi
   size: 121
-- md5: fb26a2c4893639184d61c9d4f814c958
+- md5: 307da724f630a084079219a150106cd8
   name: scores_graph.png
-  size: 21265
+  size: 25770
 - md5: 5f13e54a2783649d486acdbdc1bec47d
   name: statistics/histogram_0based_tsv.png
   size: 10396
