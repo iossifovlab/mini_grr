@@ -4,9 +4,9 @@
 - md5: 8b14183dc4dcd44cddb6b7e770162866
   name: mini_positionscore_tsv_1.tsv
   size: 301
-- md5: 8788ed4f76a4ed0c0f0e031916d98d13
+- md5: d28f7a131b61d56aae2584228b5fcc62
   name: scores_graph.png
-  size: 41017
+  size: 41006
 - md5: a49f9269adb15f8f836b44d3614cf369
   name: statistics/histogram_1based_tsv.png
   size: 10249

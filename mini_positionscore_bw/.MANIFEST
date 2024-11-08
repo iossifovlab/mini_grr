@@ -13,9 +13,9 @@
 - md5: 266644975a85c05407228c73ca9c76fe
   name: mini_positionscore_bw_0.bw
   size: 12944
-- md5: 523e006834e2dbcf6249df9f285207b0
+- md5: 30058c43ee0988fa3def6159a8024bd4
   name: scores_graph.png
-  size: 25577
+  size: 26853
 - md5: 06b6d4a2da4a03f2865a6dd8f36482ec
   name: sorted_mini_positionscore_bw_0.bedgraph
   size: 55

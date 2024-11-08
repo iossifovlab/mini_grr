@@ -13,9 +13,9 @@
 - md5: 29aa4ab2e6e6e3fc26259554cb7a9bf3
   name: mini_positionscore_interval_bedgraph_0.bedgraph.gz.tbi
   size: 123
-- md5: 671b859fbe2f0113545d46a71b146fd1
+- md5: cc214dd9d089f783dba237e9c4834e23
   name: scores_graph.png
-  size: 28197
+  size: 30291
 - md5: 8cd2f890b7bf1fb5d514fe96ecf6b86a
   name: statistics/histogram_0based_bedgraph.png
   size: 11127

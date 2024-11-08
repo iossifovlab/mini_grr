@@ -28,17 +28,17 @@ for ch in ref.chromosomes:
 # Work with the specific resource 'mini_positionscore_tabix_1'
 resources = [
     "mini_positionscore_bedgraph_tabix_0"
-    # ,"mini_positionscore_bedgraph_tabix_interval_0"
-    # ,"mini_positionscore_bw"
-    # ,"mini_positionscore_tabix_0"
-    # ,"mini_positionscore_tabix_1"
-    # ,"mini_positionscore_tabix_interval_0"
-    # ,"mini_positionscore_tabix_interval_1"
-    # ,"mini_positionscore_tsv_0"
-    # ,"mini_positionscore_tsv_1"
+    ,"mini_positionscore_bedgraph_tabix_interval_0"
+    ,"mini_positionscore_bw"
+    ,"mini_positionscore_tabix_0"
+    ,"mini_positionscore_tabix_1"
+    ,"mini_positionscore_tabix_interval_0"
+    ,"mini_positionscore_tabix_interval_1"
+    ,"mini_positionscore_tsv_0"
+    ,"mini_positionscore_tsv_1"
     ,"mini_positionscore_tsv_1_twoscores"
-    # ,"mini_positionscore_tsv_interval_0"
-    # ,"mini_positionscore_tsv_interval_1"
+    ,"mini_positionscore_tsv_interval_0"
+    ,"mini_positionscore_tsv_interval_1"
 ]
 
 for resource_id in resources:

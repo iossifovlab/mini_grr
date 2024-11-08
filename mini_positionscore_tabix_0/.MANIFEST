@@ -13,9 +13,9 @@
 - md5: f4ba3ad33d74415c50b41d2f0972f860
   name: mini_positionscore_tabix_0.tsv.gz.tbi
   size: 121
-- md5: 307da724f630a084079219a150106cd8
+- md5: e5a4400aafc15cfc7b892a2902e059eb
   name: scores_graph.png
-  size: 25770
+  size: 29410
 - md5: 5f13e54a2783649d486acdbdc1bec47d
   name: statistics/histogram_0based_tsv.png
   size: 10396
