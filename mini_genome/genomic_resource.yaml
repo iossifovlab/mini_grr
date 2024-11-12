@@ -11,5 +11,6 @@ meta:
 
   description: |
     my description
+    ![Figure](./sequence_plot.png "SSSS")
 
   labels: ~

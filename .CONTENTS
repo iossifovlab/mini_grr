@@ -135,6 +135,8 @@
     meta:
       description: 'my description
 
+        ![Figure](./sequence_plot.png "SSSS")
+
         '
       labels: null
       summary: 'mini genome
@@ -146,15 +148,18 @@
   - md5: 11060b23caa35c409459127662ac2af8
     name: dataprep.sh
     size: 30
-  - md5: 64e23e62e93c90b02bbd3966cfe3fc7a
+  - md5: a2619dd69a6ebc6247bb30add740a8c3
     name: genomic_resource.yaml
-    size: 147
+    size: 189
   - md5: c6affce7a23b3e79d2bf863f4e4a6c83
     name: mini.genome.fa
     size: 63
   - md5: 40720e2bef4d54576055883e933b7254
     name: mini.genome.fa.fai
     size: 34
+  - md5: dbe0b44c45cbb15175a00a12bf6e6ae5
+    name: sequence_plot.png
+    size: 47046
   - md5: 97ac7e4037f7100bdce45418dd6c490d
     name: statistics/chr1_statistic.yaml
     size: 301
