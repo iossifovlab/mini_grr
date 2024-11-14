@@ -1,7 +1,11 @@
-config:
-  type: categorical
-  value_order: []
-  y_log_scale: true
-values:
-  bad: 4
-  good: 2
+{
+  "config": {
+    "type": "categorical",
+    "value_order": [],
+    "y_log_scale": false
+  },
+  "values": {
+    "good": 2,
+    "bad": 4
+  }
+}

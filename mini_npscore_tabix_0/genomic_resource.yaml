@@ -34,7 +34,7 @@ scores:
       view_range:
         min: 1
         max: 3
-      y_log_scale: True
+      # y_log_scale: True
       
   - id: np_tsv_0_cat
     name: a_class
@@ -43,7 +43,7 @@ scores:
       a description
     histogram:
       type: categorical
-      y_log_scale: True
+      # y_log_scale: True
 
 
 meta:
@@ -53,5 +53,5 @@ meta:
 
   description: |
 
-    a description
+    ![The score graphs](./scores_graph.png "SSSS")
 

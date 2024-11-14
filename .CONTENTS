@@ -177,7 +177,7 @@
     meta:
       description: '
 
-        a description
+        ![The score graphs](./scores_graph.png "SSSS")
 
         '
       summary: '
@@ -195,7 +195,6 @@
         view_range:
           max: 3
           min: 1
-        y_log_scale: true
       id: np_tsv_0_num
       large_values_desc: more
       name: an_np_score
@@ -206,7 +205,6 @@
         '
       histogram:
         type: categorical
-        y_log_scale: true
       id: np_tsv_0_cat
       name: a_class
       type: str
@@ -230,9 +228,9 @@
   - md5: d372577bd6f664a49898bdca0f51309e
     name: dataprep.sh
     size: 380
-  - md5: 41c77dee0f645303c2b181bdc5418de6
+  - md5: dcac5ebbf39fbb11f50b056577ccdbb3
     name: genomic_resource.yaml
-    size: 810
+    size: 847
   - md5: 3074ecda1d857a864e391486bfa8f569
     name: mini_npscore_tabix_0.tsv
     size: 367
@@ -242,6 +240,9 @@
   - md5: a39e43345100f443e2d27dec0da3d625
     name: mini_npscore_tabix_0.tsv.gz.tbi
     size: 126
+  - md5: 5e3ee4d0b836b7a7e528eeb26df62799
+    name: scores_graph.png
+    size: 30586
   - md5: fa24f9e81ea7ab3bc580b1f4656b25dc
     name: statistics/histogram_a_class.png
     size: 8796
@@ -274,7 +275,7 @@
     meta:
       description: '
 
-        a description
+        ![The score graphs](./scores_graph.png "SSSS")
 
         '
       summary: '
@@ -292,7 +293,6 @@
         view_range:
           max: 3
           min: 1
-        y_log_scale: true
       id: np_tsv_1_num
       large_values_desc: more
       name: an_np_score
@@ -303,7 +303,6 @@
         '
       histogram:
         type: categorical
-        y_log_scale: true
       id: np_tsv_1_cat
       name: a_class
       type: str
@@ -326,9 +325,9 @@
   - md5: e39fe185554ab9c4675ba94cd3faf28c
     name: dataprep.sh
     size: 377
-  - md5: 26539001c0f286d38f9605747a749200
+  - md5: 78da767691b4b6b17562bc812ed8ad1f
     name: genomic_resource.yaml
-    size: 791
+    size: 828
   - md5: bbb61758621366999fe0693a625417a7
     name: mini_npscore_tabix_1.tsv
     size: 367
@@ -338,6 +337,9 @@
   - md5: 89af800905cf2bb647c6dd4a233ced76
     name: mini_npscore_tabix_1.tsv.gz.tbi
     size: 123
+  - md5: 6ca47ae267f62af1fb2c5fecac678b62
+    name: scores_graph.png
+    size: 30229
   - md5: 617a78a25ac175a8a4d0ada8eeb8ed37
     name: statistics/histogram_np_tsv_1_cat.png
     size: 10282

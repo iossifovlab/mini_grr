@@ -1,9 +1,9 @@
 - md5: e39fe185554ab9c4675ba94cd3faf28c
   name: dataprep.sh
   size: 377
-- md5: 26539001c0f286d38f9605747a749200
+- md5: 78da767691b4b6b17562bc812ed8ad1f
   name: genomic_resource.yaml
-  size: 791
+  size: 828
 - md5: bbb61758621366999fe0693a625417a7
   name: mini_npscore_tabix_1.tsv
   size: 367
@@ -13,18 +13,21 @@
 - md5: 89af800905cf2bb647c6dd4a233ced76
   name: mini_npscore_tabix_1.tsv.gz.tbi
   size: 123
-- md5: 617a78a25ac175a8a4d0ada8eeb8ed37
+- md5: 6ca47ae267f62af1fb2c5fecac678b62
+  name: scores_graph.png
+  size: 30229
+- md5: 12db4ac657e34c9aba072201688aa3dd
   name: statistics/histogram_np_tsv_1_cat.png
-  size: 10282
-- md5: 145a07b61d197cee0218162828fc0da0
+  size: 11792
+- md5: 4b466705cced27c490a1a5196a68e231
   name: statistics/histogram_np_tsv_1_cat.yaml
-  size: 93
-- md5: 0048cbe099b007e80d1caa48bfbcb64a
+  size: 143
+- md5: a47873d0c60a6c6e3087d87256f64228
   name: statistics/histogram_np_tsv_1_num.png
-  size: 11641
-- md5: 008947aa5875ca65cb89dfd3965017f2
+  size: 13619
+- md5: 2fd175eb14c76cf7de012ccb684f4cf5
   name: statistics/histogram_np_tsv_1_num.yaml
-  size: 1578
+  size: 2289
 - md5: d7cbfb478f6d379769911bb18671c332
   name: statistics/stats_hash
   size: 1292
