@@ -47,5 +47,5 @@ def infer_type(values):
             pass
     if n_floats/len(values) > 0.95:
             return "float"
-        else:
-            return "str"
+    else:
+        return "str"
