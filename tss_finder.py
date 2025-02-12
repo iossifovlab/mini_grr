@@ -22,6 +22,8 @@ for gene in genes:
     for tr in GM.gene_models_by_gene_name(gene):
         if tr.chrom not in chroms_to_use:
             continue
+        if not tr.is_coding:
+            continue
         tss = tr.tx[0] if tr.strand == '+' else tr.tx[1]
         tsss[tss].append(tr)
 
@@ -31,4 +33,4 @@ for gene in genes:
         print(tss, len(trs), end=' ')
         for tr in trs:
             print("\t", tr.tr_id, tr.chrom, tr.strand, tr.tx, end='')
-        print() 
+        print()
