@@ -4,6 +4,7 @@ table:
   filename: mini_vcf.vcf.gz
   index_filename: mini_vcf.vcf.gz.tbi
 
+
 meta:
 
   summary: |
