@@ -20,11 +20,75 @@ td {
     font-size: 18px;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+.close {
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 </style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll("[data-modal-trigger]").forEach(function (trigger) {
+            trigger.addEventListener("click", function () {
+                var modalId = this.getAttribute("data-modal-trigger");
+                var modal = document.getElementById(modalId);
+                if (modal) {
+                    modal.style.display = "block";
+                    document.currentOpenModal = modal;
+                }
+            });
+        });
+
+        document.querySelectorAll(".close").forEach(function (closeButton) {
+            closeButton.addEventListener("click", function () {
+                this.closest(".modal").style.display = "none";
+                document.currentOpenModal = null;
+            });
+        });
+
+        window.addEventListener("click", function (event) {
+            if (event.target.classList.contains("modal")) {
+                event.target.style.display = "none";
+                document.currentOpenModal = null;
+            }
+        });
+
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape" && document.currentOpenModal) {
+                document.currentOpenModal.style.display = "none";
+                document.currentOpenModal = null;
+            }
+        });
+    });
+</script>
 </head>
     <body>
-
     <h1>Resource</h1>
     <div>
         <table border="1">
@@ -53,7 +117,7 @@ td {
                         <template shadowrootmode="open"><p>0-based tsv position score (interval)</p>
 
                         </template>
-                     </div>
+                    </div>
                 </td>
             </tr>
             <tr>
@@ -66,10 +130,9 @@ td {
 <img src="./scores_graph.png" alt="The score graphs" title="SSSS" /></p>
 
                         </template>
-                     </div>
+                    </div>
                 </td>
             </tr>
-
             <tr>
                 <td>
                     <b>Labels:</b>
@@ -83,60 +146,9 @@ td {
 
     
 
-<style>
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        padding-top: 100px;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0,0.5);
-        justify-content: center;
-    }
-
-    .modal-content {
-        margin: auto;
-        display: block;
-        width: 80%;
-        max-width: 700px;
-    }
-
-    .close {
-        float: right;
-        font-size: 40px;
-        font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-         color: #bbb;
-         text-decoration: none;
-         cursor: pointer;
-    }
-</style>
-
-
-    <script type="text/javascript">
-        function openModal(scoreId) {
-            var modal = document.getElementById("modal-" + scoreId);
-            modal.style.display = "flex";
-        }
-
-        function closeModal(scoreId) {
-            var modal = document.getElementById("modal-" + scoreId);
-            modal.style.display = "none";
-        }
-    </script>
-
-
-
 
 
 <h1>Scores</h1>
-
 <table border="1">
     <tr>
         <th>ID</th>
@@ -146,15 +158,14 @@ td {
         <th>Histogram</th>
         <th>Range</th>
     </tr><tr class="score-definition">
-
             <td>posint_tsv_0</td>
-
             <td>float</td>
-
             
-            <td>
-                <p>posint_tsv_0</p>
-            </td>
+            
+                <td>
+                    <p>posint_tsv_0</p>
+                </td>
+            
 
             <td>
                 <div>a description</div>
@@ -169,32 +180,25 @@ td {
                     </div>
                 
             </td>
-
             <td>
                 
                 
                 <img src="statistics/histogram_posint_tsv_0.png"
                     alt="HISTOGRAM FOR posint_tsv_0"
                     title=posint_tsv_0
-                    width="200"
-                    style="cursor: pointer"
-                    onclick="openModal(title)"></td>
-
+                    style="width: 200px; cursor: pointer;"
+                    data-modal-trigger="modal-posint_tsv_0"></td>
             <td>
-                [0.000, 0.300]</td>
-
+                [0, 0.3]</td>
         </tr><div id="modal-posint_tsv_0" class="modal">
-            <div style="padding: 10px 20px; background-color: #fff; height: fit-content; width: fit-content;">
-                <span title=posint_tsv_0 class="close" onclick="closeModal(title)">&times;</span>
-                <img class="modal-content" id="histogram-posint_tsv_0"
-                    src="statistics/histogram_posint_tsv_0.png"
+            <div class="modal-content" style="padding: 10px 20px; background-color: #fff; height: fit-content; width: fit-content;">
+                <span title=posint_tsv_0 class="close">&times;</span>
+                <img src="statistics/histogram_posint_tsv_0.png"
                     alt="HISTOGRAM FOR posint_tsv_0"
-                    title=posint_tsv_0
-                    width="200">
+                    title=posint_tsv_0>
             </div>
         </div>
 </table>
-
 
 
     <h1>Files</h1>
@@ -207,36 +211,43 @@ td {
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td class="nowrap">
-                <a href='genomic_resource.yaml'>genomic_resource.yaml</a>
-            </td>
-            <td class="nowrap">673.0 B</td>
-            <td class="nowrap">c0071bae9ba15cfe615dd1add8046434</td>
-        </tr>
-        <tr>
-            <td class="nowrap">
-                <a href='mini_positionscore_interval_tsv_0.tsv'>mini_positionscore_interval_tsv_0.tsv</a>
-            </td>
-            <td class="nowrap">54.0 B</td>
-            <td class="nowrap">41ca2ab0b1e7ef18110ca3f66b1f7a55</td>
-        </tr>
-        <tr>
-            <td class="nowrap">
-                <a href='scores_graph.png'>scores_graph.png</a>
-            </td>
-            <td class="nowrap">26.9 KB</td>
-            <td class="nowrap">f103f2cc8eae89781863024ca947162b</td>
-        </tr>
-        <tr>
-            <td class="nowrap">
-                <a href='statistics/'>statistics/</a>
-            </td>
-            <td class="nowrap"></td>
-            <td class="nowrap"></td>
-        </tr>
+            <tr>
+                
+                    <td class="nowrap">
+                        <a href='genomic_resource.yaml'>genomic_resource.yaml</a>
+                    </td>
+                
+                <td class="nowrap">673.0 B</td>
+                <td class="nowrap">c0071bae9ba15cfe615dd1add8046434</td>
+            </tr>
+            <tr>
+                
+                    <td class="nowrap">
+                        <a href='mini_positionscore_interval_tsv_0.tsv'>mini_positionscore_interval_tsv_0.tsv</a>
+                    </td>
+                
+                <td class="nowrap">54.0 B</td>
+                <td class="nowrap">41ca2ab0b1e7ef18110ca3f66b1f7a55</td>
+            </tr>
+            <tr>
+                
+                    <td class="nowrap">
+                        <a href='scores_graph.png'>scores_graph.png</a>
+                    </td>
+                
+                <td class="nowrap">26.9 KB</td>
+                <td class="nowrap">f103f2cc8eae89781863024ca947162b</td>
+            </tr>
+            <tr>
+                
+                    <td class="nowrap">
+                        <a href='statistics/index.html'>statistics/</a>
+                    </td>
+                
+                <td class="nowrap"></td>
+                <td class="nowrap"></td>
+            </tr>
     </tbody>
     </table>
-
     </body>
 </html>

@@ -1,9 +1,9 @@
 - md5: c106765c88b8bf4cbf618498b821313c
   name: dataprep.sh
   size: 652
-- md5: 911c391f4317e42510cecae4fd0ce6a9
+- md5: c93efbb49319003dae1e0a88841f0dfd
   name: genomic_resource.yaml
-  size: 227
+  size: 228
 - md5: 145d88310a5e372a824c7b203a7bf5ab
   name: mini_vcf.header.vcf
   size: 370

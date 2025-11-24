@@ -1,0 +1,43 @@
+{
+  "config": {
+    "histograms": [
+      {
+        "type": "null",
+        "reason": "Unspecified reason"
+      }
+    ],
+    "table": {
+      "config": {
+        "filename": "mini_CNV.txt",
+        "chrom": {
+          "column_name": "chrom"
+        },
+        "pos_begin": {
+          "column_name": "pos_beg"
+        },
+        "pos_end": {
+          "column_name": "pos_end"
+        }
+      },
+      "files_md5": {
+        "mini_CNV.txt": "96c2088e883f8e9aeb5831b3305ac517"
+      }
+    }
+  },
+  "score_config": [
+    {
+      "id": "deletion_duplication",
+      "type": "str",
+      "name": "deletion_duplication",
+      "index": null,
+      "na_values": "[]"
+    },
+    {
+      "id": "cnv_name",
+      "type": "str",
+      "name": "CNV_name",
+      "index": null,
+      "na_values": "[]"
+    }
+  ]
+}

@@ -15,7 +15,8 @@
       {
         "type": "categorical",
         "value_order": [],
-        "y_log_scale": false
+        "y_log_scale": false,
+        "label_rotation": 0
       }
     ],
     "table": {

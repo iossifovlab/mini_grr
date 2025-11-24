@@ -1,0 +1,31 @@
+type: cnv_collection
+table:
+  filename: mini_CNV.txt 
+
+  chrom:
+    column_name: chrom
+  pos_begin:
+    column_name: pos_beg
+  pos_end:
+    column_name: pos_end
+
+scores:
+- id: deletion_duplication 
+  column_name: "deletion_duplication"
+  type: str
+  desc: duplication or deletion
+- id: cnv_name 
+  column_name: "CNV_name"
+  type: str
+  desc: CNV name
+  histogram:
+    type: "null"
+
+
+
+meta:
+  summary: |
+    CNV collection resource
+  description: |
+    A small collection of copy number variants (CNVs) with their genomic coordinates and type (deletion or duplication).
+

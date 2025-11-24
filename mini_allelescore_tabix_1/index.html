@@ -1,0 +1,313 @@
+
+
+<html>
+<head>
+<style>
+h3,h4 {
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+}
+table {
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+}
+th {
+    font-size: 20px;
+}
+td {
+    font-size: 18px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+.close {
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll("[data-modal-trigger]").forEach(function (trigger) {
+            trigger.addEventListener("click", function () {
+                var modalId = this.getAttribute("data-modal-trigger");
+                var modal = document.getElementById(modalId);
+                if (modal) {
+                    modal.style.display = "block";
+                    document.currentOpenModal = modal;
+                }
+            });
+        });
+
+        document.querySelectorAll(".close").forEach(function (closeButton) {
+            closeButton.addEventListener("click", function () {
+                this.closest(".modal").style.display = "none";
+                document.currentOpenModal = null;
+            });
+        });
+
+        window.addEventListener("click", function (event) {
+            if (event.target.classList.contains("modal")) {
+                event.target.style.display = "none";
+                document.currentOpenModal = null;
+            }
+        });
+
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape" && document.currentOpenModal) {
+                document.currentOpenModal.style.display = "none";
+                document.currentOpenModal = null;
+            }
+        });
+    });
+</script>
+</head>
+    <body>
+    <h1>Resource</h1>
+    <div>
+        <table border="1">
+            <tr>
+                <td>
+                    <b>Id:</b>
+                </td>
+                <td>mini_allelescore_tabix_1</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Type:</b>
+                </td>
+                <td>allele_score</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Version:</b>
+                </td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td><b>Summary:</b></td>
+                <td>
+                    <div>
+                        <template shadowrootmode="open"><p>1-based tsv allele score</p>
+
+                        </template>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Description:</b>
+                </td>
+                <td>
+                    <div>
+                        <template shadowrootmode="open"><p><img src="./scores_graph.png" alt="The score graphs" title="SSSS" /></p>
+
+                        </template>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Labels:</b>
+                </td>
+                <td>
+                
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    
+
+
+
+<h1>Scores</h1>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Type</th>
+        <th>Default annotation</th>
+        <th>Description</th>
+        <th>Histogram</th>
+        <th>Range</th>
+    </tr><tr class="score-definition">
+            <td>np_tsv_1_num</td>
+            <td>float</td>
+            
+            
+                <td>
+                    <p>np_tsv_1_num</p>
+                </td>
+            
+
+            <td>
+                <div>a description
+</div>
+                
+                    <div style="color: rgb(145,145,145)">
+                        Small values desc: less
+                    </div>
+                
+                
+                    <div style="color: rgb(145,145,145)">
+                        Large values desc: more
+                    </div>
+                
+            </td>
+            <td>
+                
+                
+                <img src="statistics/histogram_np_tsv_1_num.png"
+                    alt="HISTOGRAM FOR np_tsv_1_num"
+                    title=np_tsv_1_num
+                    style="width: 200px; cursor: pointer;"
+                    data-modal-trigger="modal-np_tsv_1_num"></td>
+            <td>
+                [1, 2.2]</td>
+        </tr><tr class="score-definition">
+            <td>np_tsv_1_cat</td>
+            <td>str</td>
+            
+            
+                <td>
+                    <p>np_tsv_1_cat</p>
+                </td>
+            
+
+            <td>
+                <div>a description
+</div>
+                
+                
+            </td>
+            <td>
+                
+                
+                <img src="statistics/histogram_np_tsv_1_cat.png"
+                    alt="HISTOGRAM FOR np_tsv_1_cat"
+                    title=np_tsv_1_cat
+                    style="width: 200px; cursor: pointer;"
+                    data-modal-trigger="modal-np_tsv_1_cat"></td>
+            <td>
+                bad, good</td>
+        </tr><div id="modal-np_tsv_1_num" class="modal">
+            <div class="modal-content" style="padding: 10px 20px; background-color: #fff; height: fit-content; width: fit-content;">
+                <span title=np_tsv_1_num class="close">&times;</span>
+                <img src="statistics/histogram_np_tsv_1_num.png"
+                    alt="HISTOGRAM FOR np_tsv_1_num"
+                    title=np_tsv_1_num>
+            </div>
+        </div><div id="modal-np_tsv_1_cat" class="modal">
+            <div class="modal-content" style="padding: 10px 20px; background-color: #fff; height: fit-content; width: fit-content;">
+                <span title=np_tsv_1_cat class="close">&times;</span>
+                <img src="statistics/histogram_np_tsv_1_cat.png"
+                    alt="HISTOGRAM FOR np_tsv_1_cat"
+                    title=np_tsv_1_cat>
+            </div>
+        </div>
+</table>
+
+
+    <h1>Files</h1>
+    <table>
+    <thead>
+        <tr>
+            <th>Filename</th>
+            <th>Size</th>
+            <th>md5</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                
+                    <td class="nowrap">
+                        <a href='dataprep.sh'>dataprep.sh</a>
+                    </td>
+                
+                <td class="nowrap">377.0 B</td>
+                <td class="nowrap">e39fe185554ab9c4675ba94cd3faf28c</td>
+            </tr>
+            <tr>
+                
+                    <td class="nowrap">
+                        <a href='genomic_resource.yaml'>genomic_resource.yaml</a>
+                    </td>
+                
+                <td class="nowrap">840.0 B</td>
+                <td class="nowrap">2d731d321e5ec07d8aa1279955e0f360</td>
+            </tr>
+            <tr>
+                
+                    <td class="nowrap">
+                        <a href='mini_allelescore_tabix_1.tsv'>mini_allelescore_tabix_1.tsv</a>
+                    </td>
+                
+                <td class="nowrap">367.0 B</td>
+                <td class="nowrap">bbb61758621366999fe0693a625417a7</td>
+            </tr>
+            <tr>
+                
+                    <td class="nowrap">
+                        <a href='mini_allelescore_tabix_1.tsv.gz'>mini_allelescore_tabix_1.tsv.gz</a>
+                    </td>
+                
+                <td class="nowrap">239.0 B</td>
+                <td class="nowrap">3b7c8ac8f1fdd70de0a51f755ad5786f</td>
+            </tr>
+            <tr>
+                
+                    <td class="nowrap">
+                        <a href='mini_allelescore_tabix_1.tsv.gz.tbi'>mini_allelescore_tabix_1.tsv.gz.tbi</a>
+                    </td>
+                
+                <td class="nowrap">123.0 B</td>
+                <td class="nowrap">89af800905cf2bb647c6dd4a233ced76</td>
+            </tr>
+            <tr>
+                
+                    <td class="nowrap">
+                        <a href='scores_graph.png'>scores_graph.png</a>
+                    </td>
+                
+                <td class="nowrap">29.52 KB</td>
+                <td class="nowrap">6ca47ae267f62af1fb2c5fecac678b62</td>
+            </tr>
+            <tr>
+                
+                    <td class="nowrap">
+                        <a href='statistics/index.html'>statistics/</a>
+                    </td>
+                
+                <td class="nowrap"></td>
+                <td class="nowrap"></td>
+            </tr>
+    </tbody>
+    </table>
+    </body>
+</html>

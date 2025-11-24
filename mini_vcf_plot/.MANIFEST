@@ -34,15 +34,15 @@
 - md5: 13280d8329578d280684840b32389c0b
   name: statistics/histogram_vcf_1_int.png
   size: 9238
-- md5: d17cb8d4a84cb16b4b1c90221941c3eb
+- md5: e3d5262a7f88fb39634aba42a8b8c180
   name: statistics/histogram_vcf_1_int.yaml
-  size: 318
+  size: 488
 - md5: 3466e25c20349df665478615319f9e65
   name: statistics/histogram_vcf_1_str.png
   size: 9245
-- md5: ca007d88468a20ae71bff876ade32458
+- md5: 5b46a129298759e44a151a738772c803
   name: statistics/histogram_vcf_1_str.yaml
-  size: 147
-- md5: 117bafcafdca9d210248d358b8274adf
+  size: 233
+- md5: 7c5490882e92256a5cbb3fe742c879a3
   name: statistics/stats_hash
-  size: 1039
+  size: 1068

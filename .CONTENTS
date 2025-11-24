@@ -1,4 +1,240 @@
 - config:
+    meta:
+      description: 'A small collection of copy number variants (CNVs) with their genomic
+        coordinates and type (deletion or duplication).
+
+        '
+      summary: 'CNV collection resource
+
+        '
+    scores:
+    - column_name: deletion_duplication
+      desc: duplication or deletion
+      id: deletion_duplication
+      type: str
+    - column_name: CNV_name
+      desc: CNV name
+      histogram:
+        type: 'null'
+      id: cnv_name
+      type: str
+    table:
+      chrom:
+        column_name: chrom
+      filename: mini_CNV.txt
+      pos_begin:
+        column_name: pos_beg
+      pos_end:
+        column_name: pos_end
+    type: cnv_collection
+  id: mini_CNV
+  manifest:
+  - md5: 238659e80d409eaa120166e0f6e413a0
+    name: genomic_resource.yaml
+    size: 570
+  - md5: 96c2088e883f8e9aeb5831b3305ac517
+    name: mini_CNV.txt
+    size: 128
+  - md5: 076c3d462b6f033d6f6da1f120f5cbbb
+    name: statistics/histogram_cnv_name.json
+    size: 76
+  - md5: 10b148982ea23c00d12fdd6ddda1b720
+    name: statistics/histogram_cnv_name.png
+    size: 11401
+  - md5: 631a49ff6c4ae5ecc9159292444e9f38
+    name: statistics/histogram_deletion_duplication.json
+    size: 182
+  - md5: 87e39dd26c16de406b24539103298dec
+    name: statistics/histogram_deletion_duplication.png
+    size: 11999
+  - md5: b4a0d8cbf2913998ec10cda4ca1e9529
+    name: statistics/stats_hash
+    size: 803
+  version: '0'
+- config:
+    meta:
+      description: '
+
+        ![The score graphs](./scores_graph.png "SSSS")
+
+        '
+      summary: '
+
+        0-based tsv allele score
+
+        '
+    scores:
+    - desc: 'a description
+
+        '
+      histogram:
+        number_of_bins: 100
+        type: number
+        view_range:
+          max: 3
+          min: 1
+      id: np_tsv_0_num
+      large_values_desc: more
+      name: an_np_score
+      small_values_desc: less
+      type: float
+    - desc: 'a description
+
+        '
+      histogram:
+        type: categorical
+      id: np_tsv_0_cat
+      name: a_class
+      type: str
+    table:
+      alternative:
+        name: alt
+      chrom:
+        name: chrom
+      filename: mini_allelescore_tabix_0.tsv.gz
+      format: tabix
+      pos_begin:
+        name: pos
+      pos_end:
+        name: pos
+      reference:
+        name: ref
+      zero_based: true
+    type: allele_score
+  id: mini_allelescore_tabix_0
+  manifest:
+  - md5: 140394ea4351b50537a9d0c0555a2b86
+    name: dataprep.sh
+    size: 384
+  - md5: 03ef0a1e1c1c06de7ac68a0c210419d5
+    name: genomic_resource.yaml
+    size: 859
+  - md5: 3074ecda1d857a864e391486bfa8f569
+    name: mini_allelescore_tabix_0.tsv
+    size: 367
+  - md5: 6a805fe106c1984d8fd15ae4636cc145
+    name: mini_allelescore_tabix_0.tsv.gz
+    size: 239
+  - md5: a39e43345100f443e2d27dec0da3d625
+    name: mini_allelescore_tabix_0.tsv.gz.tbi
+    size: 126
+  - md5: 5e3ee4d0b836b7a7e528eeb26df62799
+    name: scores_graph.png
+    size: 30586
+  - md5: fa24f9e81ea7ab3bc580b1f4656b25dc
+    name: statistics/histogram_a_class.png
+    size: 8796
+  - md5: 145a07b61d197cee0218162828fc0da0
+    name: statistics/histogram_a_class.yaml
+    size: 93
+  - md5: 1094430cf1a65e207b683958cdd1df84
+    name: statistics/histogram_an_np_score.png
+    size: 11570
+  - md5: 008947aa5875ca65cb89dfd3965017f2
+    name: statistics/histogram_an_np_score.yaml
+    size: 1578
+  - md5: d437234570a5d55cee7acddc4a175b41
+    name: statistics/histogram_np_tsv_0_cat.png
+    size: 11590
+  - md5: 3056d4a004357515f07aac452be83f2d
+    name: statistics/histogram_np_tsv_0_cat.yaml
+    size: 168
+  - md5: 8321361776eefa679481979721dbf0dc
+    name: statistics/histogram_np_tsv_0_num.png
+    size: 12104
+  - md5: 2fd175eb14c76cf7de012ccb684f4cf5
+    name: statistics/histogram_np_tsv_0_num.yaml
+    size: 2289
+  - md5: e98e827b8d84dcbb656860a6acb6c0e1
+    name: statistics/stats_hash
+    size: 1363
+  version: '0'
+- config:
+    meta:
+      description: '
+
+        ![The score graphs](./scores_graph.png "SSSS")
+
+        '
+      summary: '
+
+        1-based tsv allele score
+
+        '
+    scores:
+    - desc: 'a description
+
+        '
+      histogram:
+        number_of_bins: 100
+        type: number
+        view_range:
+          max: 3
+          min: 1
+      id: np_tsv_1_num
+      large_values_desc: more
+      name: an_np_score
+      small_values_desc: less
+      type: float
+    - desc: 'a description
+
+        '
+      histogram:
+        type: categorical
+      id: np_tsv_1_cat
+      name: a_class
+      type: str
+    table:
+      alternative:
+        name: alt
+      chrom:
+        name: chrom
+      filename: mini_allelescore_tabix_1.tsv.gz
+      format: tabix
+      pos_begin:
+        name: pos
+      pos_end:
+        name: pos
+      reference:
+        name: ref
+    type: allele_score
+  id: mini_allelescore_tabix_1
+  manifest:
+  - md5: e39fe185554ab9c4675ba94cd3faf28c
+    name: dataprep.sh
+    size: 377
+  - md5: 2d731d321e5ec07d8aa1279955e0f360
+    name: genomic_resource.yaml
+    size: 840
+  - md5: bbb61758621366999fe0693a625417a7
+    name: mini_allelescore_tabix_1.tsv
+    size: 367
+  - md5: 3b7c8ac8f1fdd70de0a51f755ad5786f
+    name: mini_allelescore_tabix_1.tsv.gz
+    size: 239
+  - md5: 89af800905cf2bb647c6dd4a233ced76
+    name: mini_allelescore_tabix_1.tsv.gz.tbi
+    size: 123
+  - md5: 6ca47ae267f62af1fb2c5fecac678b62
+    name: scores_graph.png
+    size: 30229
+  - md5: 0cf367d71e91d33a4000559264127bf5
+    name: statistics/histogram_np_tsv_1_cat.png
+    size: 11475
+  - md5: 3056d4a004357515f07aac452be83f2d
+    name: statistics/histogram_np_tsv_1_cat.yaml
+    size: 168
+  - md5: 2ef1630d8403963ab7825b94f4540a1b
+    name: statistics/histogram_np_tsv_1_num.png
+    size: 11956
+  - md5: 2fd175eb14c76cf7de012ccb684f4cf5
+    name: statistics/histogram_np_tsv_1_num.yaml
+    size: 2289
+  - md5: 190df76454c625ca4b35372a0ab0406b
+    name: statistics/stats_hash
+    size: 1335
+  version: '0'
+- config:
     filename: mini_gtf.gtf
     format: gtf
     meta:
@@ -111,23 +347,41 @@
       summary: 'mini gene set
 
         '
-    type: gene_set
+    type: gene_set_collection
     web_format_str: 'key| (|count|): |desc'
     web_label: geneset
   id: mini_geneset
   manifest:
-  - md5: 751ed0aaa8b935a89d03e974823bf431
+  - md5: c2630ffbdb6c912d9a5b53afffa751b9
     name: genomic_resource.yaml
-    size: 201
+    size: 212
   - md5: 6192fca86a29be5bc6f096390a779872
     name: mini_geneset-map.txt
     size: 21
   - md5: 3636a33d344829827800dd4c96ed6427
     name: mini_geneset-mapnames.txt
     size: 24
-  - md5: 6a99c575ab87f8c7d1ed1e52e7e349ce
+  - md5: 2540597011eac7ad3aa850a2c4ea8f4e
+    name: statistics/gene_collection_count_statistics.json
+    size: 55
+  - md5: cfcc7879e18b482b2917b3c6134c0f8c
+    name: statistics/gene_sets_list_statistics.json
+    size: 96
+  - md5: e19acbf9a592a3271e4bf1fa6fd1bdbd
+    name: statistics/gene_sets_per_gene_histogram.json
+    size: 153
+  - md5: cfde0b8b3227f4d355812e3323807760
+    name: statistics/gene_sets_per_gene_histogram.png
+    size: 13014
+  - md5: e6893d637207586718d697e8bf59ae5e
+    name: statistics/genes_per_gene_set_histogram.json
+    size: 153
+  - md5: df99a7ed6056e5e89a0feb53fb183d5a
+    name: statistics/genes_per_gene_set_histogram.png
+    size: 9232
+  - md5: be7107bf4f3c6a7c0361fef4eefb764e
     name: statistics/stats_hash
-    size: 11
+    size: 156
   version: '0'
 - config:
     chrom_prefix: chr
@@ -172,189 +426,6 @@
   - md5: 32874fed1e4abebd4f9a2def47a6b0e9
     name: statistics/stats_hash
     size: 54
-  version: '0'
-- config:
-    meta:
-      description: '
-
-        ![The score graphs](./scores_graph.png "SSSS")
-
-        '
-      summary: '
-
-        0-based tsv np score
-
-        '
-    scores:
-    - desc: 'a description
-
-        '
-      histogram:
-        number_of_bins: 100
-        type: number
-        view_range:
-          max: 3
-          min: 1
-      id: np_tsv_0_num
-      large_values_desc: more
-      name: an_np_score
-      small_values_desc: less
-      type: float
-    - desc: 'a description
-
-        '
-      histogram:
-        type: categorical
-      id: np_tsv_0_cat
-      name: a_class
-      type: str
-    table:
-      alternative:
-        name: alt
-      chrom:
-        name: chrom
-      filename: mini_npscore_tabix_0.tsv.gz
-      format: tabix
-      pos_begin:
-        name: pos
-      pos_end:
-        name: pos
-      reference:
-        name: ref
-      zero_based: true
-    type: np_score
-  id: mini_npscore_tabix_0
-  manifest:
-  - md5: d372577bd6f664a49898bdca0f51309e
-    name: dataprep.sh
-    size: 380
-  - md5: dcac5ebbf39fbb11f50b056577ccdbb3
-    name: genomic_resource.yaml
-    size: 847
-  - md5: 3074ecda1d857a864e391486bfa8f569
-    name: mini_npscore_tabix_0.tsv
-    size: 367
-  - md5: 6a805fe106c1984d8fd15ae4636cc145
-    name: mini_npscore_tabix_0.tsv.gz
-    size: 239
-  - md5: a39e43345100f443e2d27dec0da3d625
-    name: mini_npscore_tabix_0.tsv.gz.tbi
-    size: 126
-  - md5: 5e3ee4d0b836b7a7e528eeb26df62799
-    name: scores_graph.png
-    size: 30586
-  - md5: fa24f9e81ea7ab3bc580b1f4656b25dc
-    name: statistics/histogram_a_class.png
-    size: 8796
-  - md5: 145a07b61d197cee0218162828fc0da0
-    name: statistics/histogram_a_class.yaml
-    size: 93
-  - md5: 1094430cf1a65e207b683958cdd1df84
-    name: statistics/histogram_an_np_score.png
-    size: 11570
-  - md5: 008947aa5875ca65cb89dfd3965017f2
-    name: statistics/histogram_an_np_score.yaml
-    size: 1578
-  - md5: 0d3f2b8bd9cce11cf5a049f5070a2bb8
-    name: statistics/histogram_np_tsv_0_cat.png
-    size: 10409
-  - md5: 145a07b61d197cee0218162828fc0da0
-    name: statistics/histogram_np_tsv_0_cat.yaml
-    size: 93
-  - md5: 6b30c9c16b3d8374568bdd3af37e4a57
-    name: statistics/histogram_np_tsv_0_num.png
-    size: 11788
-  - md5: 008947aa5875ca65cb89dfd3965017f2
-    name: statistics/histogram_np_tsv_0_num.yaml
-    size: 1578
-  - md5: 857fd7b1912af6b428a5ccedd160b60b
-    name: statistics/stats_hash
-    size: 1320
-  version: '0'
-- config:
-    meta:
-      description: '
-
-        ![The score graphs](./scores_graph.png "SSSS")
-
-        '
-      summary: '
-
-        1-based tsv np score
-
-        '
-    scores:
-    - desc: 'a description
-
-        '
-      histogram:
-        number_of_bins: 100
-        type: number
-        view_range:
-          max: 3
-          min: 1
-      id: np_tsv_1_num
-      large_values_desc: more
-      name: an_np_score
-      small_values_desc: less
-      type: float
-    - desc: 'a description
-
-        '
-      histogram:
-        type: categorical
-      id: np_tsv_1_cat
-      name: a_class
-      type: str
-    table:
-      alternative:
-        name: alt
-      chrom:
-        name: chrom
-      filename: mini_npscore_tabix_1.tsv.gz
-      format: tabix
-      pos_begin:
-        name: pos
-      pos_end:
-        name: pos
-      reference:
-        name: ref
-    type: np_score
-  id: mini_npscore_tabix_1
-  manifest:
-  - md5: e39fe185554ab9c4675ba94cd3faf28c
-    name: dataprep.sh
-    size: 377
-  - md5: 78da767691b4b6b17562bc812ed8ad1f
-    name: genomic_resource.yaml
-    size: 828
-  - md5: bbb61758621366999fe0693a625417a7
-    name: mini_npscore_tabix_1.tsv
-    size: 367
-  - md5: 3b7c8ac8f1fdd70de0a51f755ad5786f
-    name: mini_npscore_tabix_1.tsv.gz
-    size: 239
-  - md5: 89af800905cf2bb647c6dd4a233ced76
-    name: mini_npscore_tabix_1.tsv.gz.tbi
-    size: 123
-  - md5: 6ca47ae267f62af1fb2c5fecac678b62
-    name: scores_graph.png
-    size: 30229
-  - md5: 617a78a25ac175a8a4d0ada8eeb8ed37
-    name: statistics/histogram_np_tsv_1_cat.png
-    size: 10282
-  - md5: 145a07b61d197cee0218162828fc0da0
-    name: statistics/histogram_np_tsv_1_cat.yaml
-    size: 93
-  - md5: 0048cbe099b007e80d1caa48bfbcb64a
-    name: statistics/histogram_np_tsv_1_num.png
-    size: 11641
-  - md5: 008947aa5875ca65cb89dfd3965017f2
-    name: statistics/histogram_np_tsv_1_num.yaml
-    size: 1578
-  - md5: d7cbfb478f6d379769911bb18671c332
-    name: statistics/stats_hash
-    size: 1292
   version: '0'
 - config:
     filename: mini_pipeline.yaml
@@ -1199,21 +1270,21 @@
   - md5: 28c9fda81d22d644ae4082a87cea9246
     name: statistics/histogram_a_pos_score.yaml
     size: 1453
-  - md5: 26455b853dd5bca6c337fb86d7706ed5
+  - md5: 31c9e134f2723c3bf8a362755c339c10
     name: statistics/histogram_pos_tsv_1.png
-    size: 14922
-  - md5: 2491e2503196e61e307cd677ae0efdee
+    size: 13191
+  - md5: ddb5c79fb821efd46af569307421a444
     name: statistics/histogram_pos_tsv_1.yaml
-    size: 1453
-  - md5: 3e065d4ecfd0d5ae7aeabcb0e733a141
+    size: 2163
+  - md5: a7b48b86b67ac38807e4b4351cad69c9
     name: statistics/histogram_pos_tsv_1_st.png
-    size: 9335
-  - md5: 7eaf593189f5a4e88f1efd6a694d065a
+    size: 8975
+  - md5: 5272eba36c4b5a955e49ed0f1b964b6e
     name: statistics/histogram_pos_tsv_1_st.yaml
-    size: 95
-  - md5: 0eae3481659d24f87b5bae8c19d76fc5
+    size: 169
+  - md5: 15faab5ccd9de52cc1769e07d7153a73
     name: statistics/stats_hash
-    size: 1074
+    size: 1103
   version: '0'
 - config:
     meta:
@@ -1411,9 +1482,9 @@
   - md5: c106765c88b8bf4cbf618498b821313c
     name: dataprep.sh
     size: 652
-  - md5: 911c391f4317e42510cecae4fd0ce6a9
+  - md5: c93efbb49319003dae1e0a88841f0dfd
     name: genomic_resource.yaml
-    size: 227
+    size: 228
   - md5: 145d88310a5e372a824c7b203a7bf5ab
     name: mini_vcf.header.vcf
     size: 370
@@ -1594,18 +1665,18 @@
   - md5: 13280d8329578d280684840b32389c0b
     name: statistics/histogram_vcf_1_int.png
     size: 9238
-  - md5: d17cb8d4a84cb16b4b1c90221941c3eb
+  - md5: e3d5262a7f88fb39634aba42a8b8c180
     name: statistics/histogram_vcf_1_int.yaml
-    size: 318
+    size: 488
   - md5: 3466e25c20349df665478615319f9e65
     name: statistics/histogram_vcf_1_str.png
     size: 9245
-  - md5: ca007d88468a20ae71bff876ade32458
+  - md5: 5b46a129298759e44a151a738772c803
     name: statistics/histogram_vcf_1_str.yaml
-    size: 147
-  - md5: 117bafcafdca9d210248d358b8274adf
+    size: 233
+  - md5: 7c5490882e92256a5cbb3fe742c879a3
     name: statistics/stats_hash
-    size: 1039
+    size: 1068
   version: '0'
 - config:
     meta:

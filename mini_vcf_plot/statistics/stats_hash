@@ -16,6 +16,7 @@
         "type": "categorical",
         "value_order": [],
         "y_log_scale": true,
+        "label_rotation": 0,
         "plot_function": "customplot.py:plot_clnsig"
       }
     ],

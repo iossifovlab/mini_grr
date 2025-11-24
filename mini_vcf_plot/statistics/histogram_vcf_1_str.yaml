@@ -1,9 +1,14 @@
-config:
-  plot_function: customplot.py:plot_clnsig
-  type: categorical
-  value_order: []
-  y_log_scale: true
-values:
-  str1: 1
-  str2: 2
-  str3: 3
+{
+  "config": {
+    "type": "categorical",
+    "value_order": [],
+    "y_log_scale": true,
+    "label_rotation": 0,
+    "plot_function": "customplot.py:plot_clnsig"
+  },
+  "values": {
+    "str1": 1,
+    "str2": 2,
+    "str3": 3
+  }
+}

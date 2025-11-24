@@ -20,11 +20,108 @@ td {
     font-size: 18px;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+.close {
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#gene-sets-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 1200px;
+    table-layout: fixed;
+}
+#gene-sets-table th {
+    word-break: break-word;
+    max-width: 200px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+#gene-sets-table td {
+    word-break: break-word;
+    max-width: 200px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+#gene-sets-table th:first-child,
+#gene-sets-table td:first-child {
+    border-left: 1px solid;
+}
+#gene-sets-table thead tr:nth-of-type(2) th {
+    border-top: none;
+}
+#gene-sets-table thead {
+    position: sticky; top: 0; background-color: white;
+}
+.histogram {
+    margin-bottom: 16px;
+}
 
 </style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll("[data-modal-trigger]").forEach(function (trigger) {
+            trigger.addEventListener("click", function () {
+                var modalId = this.getAttribute("data-modal-trigger");
+                var modal = document.getElementById(modalId);
+                if (modal) {
+                    modal.style.display = "block";
+                    document.currentOpenModal = modal;
+                }
+            });
+        });
+
+        document.querySelectorAll(".close").forEach(function (closeButton) {
+            closeButton.addEventListener("click", function () {
+                this.closest(".modal").style.display = "none";
+                document.currentOpenModal = null;
+            });
+        });
+
+        window.addEventListener("click", function (event) {
+            if (event.target.classList.contains("modal")) {
+                event.target.style.display = "none";
+                document.currentOpenModal = null;
+            }
+        });
+
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape" && document.currentOpenModal) {
+                document.currentOpenModal.style.display = "none";
+                document.currentOpenModal = null;
+            }
+        });
+    });
+</script>
 </head>
     <body>
-
     <h1>Resource</h1>
     <div>
         <table border="1">
@@ -38,7 +135,7 @@ td {
                 <td>
                     <b>Type:</b>
                 </td>
-                <td>gene_set</td>
+                <td>gene_set_collection</td>
             </tr>
             <tr>
                 <td>
@@ -53,7 +150,7 @@ td {
                         <template shadowrootmode="open"><p>mini gene set</p>
 
                         </template>
-                     </div>
+                    </div>
                 </td>
             </tr>
             <tr>
@@ -65,10 +162,9 @@ td {
                         <template shadowrootmode="open"><p>description</p>
 
                         </template>
-                     </div>
+                    </div>
                 </td>
             </tr>
-
             <tr>
                 <td>
                     <b>Labels:</b>
@@ -81,18 +177,76 @@ td {
     </div>
 
     
+
 <hr>
 <h2>Gene set ID: geneset1</h2>
+<h3>Statistics:</h3>
+<p>Number of gene sets: 2</p>
+<p>Number of unique genes: 1</p>
+<div style="display: flex; padding-top: 8px;">
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <span>Count of genes per gene set</span>
+        <div class="histogram">
+            <img src="statistics/genes_per_gene_set_histogram.png"
+                style="width: 300px; cursor: pointer;"
+                alt=geneset1
+                title="genes-per-gene-set"
+                data-modal-trigger="genes-per-gene-set">
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center; padding-left: 38px;">
+        <span>Count of gene sets per gene</span>
+        <div class="histogram">
+            <img src="statistics/gene_sets_per_gene_histogram.png"
+                style="width: 300px; cursor: pointer;"
+                alt=geneset1
+                title="gene-sets-per-gene"
+                data-modal-trigger="gene-sets-per-gene">
+        </div>
+    </div>
+</div>
+<div id="genes-per-gene-set" class="modal">
+    <div class="modal-content"
+        style="padding: 10px 20px; background-color: #fff; height: fit-content; width: fit-content;">
+        <span class="close">&times;</span>
+        <img src="statistics/genes_per_gene_set_histogram.png"
+            alt="genes per gene set histogram"
+            title="genes-per-gene-set">
+    </div>
+</div>
+<div id="gene-sets-per-gene" class="modal">
+    <div class="modal-content"
+        style="padding: 10px 20px; background-color: #fff; height: fit-content; width: fit-content;">
+        <span class="close">&times;</span>
+        <img src="statistics/gene_sets_per_gene_histogram.png"
+            alt="genes per gene set histogram"
+            title="gene-sets-per-gene">
+    </div>
+</div>
+<div style="max-height: 50%; overflow-y: auto; width: fit-content; margin-bottom: 16px;">
+    <table id="gene-sets-table">
+        <thead>
+            <tr>
+                <th>Gene Set</th>
+                <th style="width: 110px">Gene Count</th>
+                <th>Description</th>
+            </tr>
+        </thead><tr>
+                <td>1</td>
+                <td>1</td>
+                <td>Function1</td>
+            </tr><tr>
+                <td>2</td>
+                <td>1</td>
+                <td>Function2</td>
+            </tr></table>
+</div>
 
-<h3>Gene sets file:</h3>
-<a href="mini_geneset-map.txt">
-mini_geneset-map.txt
-</a>
+<h3 style="margin-top: 32px">Gene sets file:</h3>
+<a href="mini_geneset-map.txt">mini_geneset-map.txt</a>
 
 <p>Format: map</p>
-
 <p>Web label: geneset</p>
-
 
 <p>Web label: key| (|count|): |desc</p>
 
@@ -108,36 +262,43 @@ mini_geneset-map.txt
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td class="nowrap">
-                <a href='genomic_resource.yaml'>genomic_resource.yaml</a>
-            </td>
-            <td class="nowrap">201.0 B</td>
-            <td class="nowrap">751ed0aaa8b935a89d03e974823bf431</td>
-        </tr>
-        <tr>
-            <td class="nowrap">
-                <a href='mini_geneset-map.txt'>mini_geneset-map.txt</a>
-            </td>
-            <td class="nowrap">21.0 B</td>
-            <td class="nowrap">6192fca86a29be5bc6f096390a779872</td>
-        </tr>
-        <tr>
-            <td class="nowrap">
-                <a href='mini_geneset-mapnames.txt'>mini_geneset-mapnames.txt</a>
-            </td>
-            <td class="nowrap">24.0 B</td>
-            <td class="nowrap">3636a33d344829827800dd4c96ed6427</td>
-        </tr>
-        <tr>
-            <td class="nowrap">
-                <a href='statistics/'>statistics/</a>
-            </td>
-            <td class="nowrap"></td>
-            <td class="nowrap"></td>
-        </tr>
+            <tr>
+                
+                    <td class="nowrap">
+                        <a href='genomic_resource.yaml'>genomic_resource.yaml</a>
+                    </td>
+                
+                <td class="nowrap">212.0 B</td>
+                <td class="nowrap">c2630ffbdb6c912d9a5b53afffa751b9</td>
+            </tr>
+            <tr>
+                
+                    <td class="nowrap">
+                        <a href='mini_geneset-map.txt'>mini_geneset-map.txt</a>
+                    </td>
+                
+                <td class="nowrap">21.0 B</td>
+                <td class="nowrap">6192fca86a29be5bc6f096390a779872</td>
+            </tr>
+            <tr>
+                
+                    <td class="nowrap">
+                        <a href='mini_geneset-mapnames.txt'>mini_geneset-mapnames.txt</a>
+                    </td>
+                
+                <td class="nowrap">24.0 B</td>
+                <td class="nowrap">3636a33d344829827800dd4c96ed6427</td>
+            </tr>
+            <tr>
+                
+                    <td class="nowrap">
+                        <a href='statistics/index.html'>statistics/</a>
+                    </td>
+                
+                <td class="nowrap"></td>
+                <td class="nowrap"></td>
+            </tr>
     </tbody>
     </table>
-
     </body>
 </html>

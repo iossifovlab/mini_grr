@@ -1,0 +1,3 @@
+chrom	pos_beg	pos_end	CNV_name	deletion_duplication
+chr1	3	15	Chr1_duplication	Duplication
+chr2	5	15	Chr2_duplication	Deletion
