@@ -3,7 +3,7 @@
 from collections import defaultdict
 import os
 import pylab
-from dae.genomic_resources import build_genomic_resource_repository
+from dae.genomic_resources.repository_factory import build_genomic_resource_repository
 from dae.genomic_resources.reference_genome import build_reference_genome_from_resource_id
 from dae.genomic_resources.genomic_scores import PositionScore
 
