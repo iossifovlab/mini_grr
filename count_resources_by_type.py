@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from collections import defaultdict
 from dae.genomic_resources.repository_factory import build_genomic_resource_repository
 
@@ -11,8 +13,8 @@ for gr in grr.get_all_resources():
     grid = gr.get_id()
 
     prefix = grid.split("/")[0]
-    if prefix not in ["hg19", "hg38", "t2t"]:
-        prefix = "other"
+    # if prefix not in ["hg19", "hg38", "t2t"]:
+    #     prefix = "other"
     
     cnts[prefix, grtp] += 1
 
