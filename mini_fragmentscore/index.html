@@ -171,7 +171,7 @@
       .modal-content {
         margin: auto;
         display: block;
-        width: fit-content;
+        max-width: 800px;
         padding: 10px 20px;
         background-color: #fff;
       }
@@ -240,11 +240,11 @@
         <table id="resource-table">
             <tr>
                 <th>Id</th>
-                <td>mini_CNV</td>
+                <td>mini_fragmentscore</td>
             </tr>
             <tr>
                 <th>Type</th>
-                <td>cnv_collection</td>
+                <td>fragment_score</td>
             </tr>
             <tr>
                 <th>Version</th>
@@ -254,7 +254,7 @@
                 <th>Summary</th>
                 <td>
                     <div>
-                        <template shadowrootmode="open">CNV collection resource
+                        <template shadowrootmode="open">fragment score resource for CNVs
 
                         </template>
                     </div>
@@ -282,7 +282,8 @@
                               a:hover {
                                 color: #4C93C9;
                               }
-                            </style><p>A toy collection of copy number variants (CNVs) with their genomic coordinates and type (deletion or duplication).</p>
+                            </style>
+                            <p>A toy collection of copy number variants (CNVs) with their genomic coordinates and type (deletion or duplication).</p>
 
                         </template>
                     </div>
@@ -341,7 +342,7 @@
                 
                 <img src="statistics/histogram_deletion_duplication.png"
                     alt="HISTOGRAM FOR deletion_duplication"
-                    title=deletion_duplication
+                    title="deletion_duplication"
                     class="histogram-thumbnail"
                     data-modal-trigger="modal-deletion_duplication"></td>
             <td>
@@ -366,18 +367,18 @@
             <td>NO DOMAIN</td>
         </tr><div id="modal-deletion_duplication" class="modal">
             <div class="modal-content">
-                <span title=deletion_duplication class="close">&times;</span>
+                <span title="deletion_duplication" class="close">&times;</span>
                 <img src="statistics/histogram_deletion_duplication.png"
                     alt="HISTOGRAM FOR deletion_duplication"
-                    title=deletion_duplication
+                    title="deletion_duplication"
                     style="max-width: min(100%, 800px);">
             </div>
         </div><div id="modal-cnv_name" class="modal">
             <div class="modal-content">
-                <span title=cnv_name class="close">&times;</span>
+                <span title="cnv_name" class="close">&times;</span>
                 <img src="statistics/histogram_cnv_name.png"
                     alt="HISTOGRAM FOR cnv_name"
-                    title=cnv_name
+                    title="cnv_name"
                     style="max-width: min(100%, 800px);">
             </div>
         </div>
@@ -401,13 +402,13 @@
                         <a href='genomic_resource.yaml'>genomic_resource.yaml</a>
                     </td>
                 
-                <td class="nowrap">566.0 B</td>
-                <td class="nowrap">7f00bfdfb5d037e0692d5a9f0b93a88b</td>
+                <td class="nowrap">601.0 B</td>
+                <td class="nowrap">14b5427c5e446023889d61d032c394d2</td>
             </tr>
             <tr>
                 
                     <td class="nowrap">
-                        <a href='mini_CNV.txt'>mini_CNV.txt</a>
+                        <a href='mini_fragmentCNV.txt'>mini_fragmentCNV.txt</a>
                     </td>
                 
                 <td class="nowrap">128.0 B</td>

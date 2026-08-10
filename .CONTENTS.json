@@ -80,6 +80,74 @@
   {
     "config": {
       "meta": {
+        "description": "A toy collection of copy number variants (CNVs) with their genomic coordinates and type (deletion or duplication).",
+        "summary": "CNV collection resource\n"
+      },
+      "scores": [
+        {
+          "column_name": "deletion_duplication",
+          "desc": "duplication or deletion",
+          "id": "deletion_duplication",
+          "type": "str"
+        },
+        {
+          "column_name": "CNV_name",
+          "desc": "CNV name",
+          "histogram": {
+            "type": "null"
+          },
+          "id": "cnv_name",
+          "type": "str"
+        }
+      ],
+      "table": {
+        "chrom": {
+          "column_name": "chrom"
+        },
+        "filename": "mini_CNV.txt",
+        "pos_begin": {
+          "column_name": "pos_beg"
+        },
+        "pos_end": {
+          "column_name": "pos_end"
+        }
+      },
+      "type": "cnv_collection"
+    },
+    "full_id": "mini_CNV2",
+    "id": "mini_CNV2",
+    "manifest": [
+      {
+        "md5": "7f00bfdfb5d037e0692d5a9f0b93a88b",
+        "name": "genomic_resource.yaml",
+        "size": 566
+      },
+      {
+        "md5": "96c2088e883f8e9aeb5831b3305ac517",
+        "name": "mini_CNV.txt",
+        "size": 128
+      },
+      {
+        "md5": "631a49ff6c4ae5ecc9159292444e9f38",
+        "name": "statistics/histogram_deletion_duplication.json",
+        "size": 182
+      },
+      {
+        "md5": "78f71d7af93eec7396332ef262ed91a1",
+        "name": "statistics/histogram_deletion_duplication.png",
+        "size": 20467
+      },
+      {
+        "md5": "b4a0d8cbf2913998ec10cda4ca1e9529",
+        "name": "statistics/stats_hash",
+        "size": 803
+      }
+    ],
+    "version": "0"
+  },
+  {
+    "config": {
+      "meta": {
         "description": "\nThis toy allele score resource demonstrates how allele-level scores can be stored in a tabix-indexed TSV file using 0-based coordinates. Each row represents a specific allele defined by chromosome, position, reference allele, and alternative allele, and provides both a numeric allele score and a categorical allele class.\n",
         "summary": "\n0-based tabix-indexed TSV allele score resource\n"
       },
@@ -294,6 +362,85 @@
         "md5": "f3f031ae7cfec626afe1677b14fc5d4a",
         "name": "statistics/stats_hash",
         "size": 1347
+      }
+    ],
+    "version": "0"
+  },
+  {
+    "config": {
+      "meta": {
+        "description": "A toy collection of copy number variants (CNVs) with their genomic coordinates and type (deletion or duplication).",
+        "summary": "fragment score resource for CNVs\n"
+      },
+      "scores": [
+        {
+          "column_name": "deletion_duplication",
+          "desc": "duplication or deletion",
+          "id": "deletion_duplication",
+          "type": "str"
+        },
+        {
+          "column_name": "CNV_name",
+          "desc": "CNV name",
+          "histogram": {
+            "type": "null"
+          },
+          "id": "cnv_name",
+          "type": "str"
+        }
+      ],
+      "table": {
+        "chrom": {
+          "column_name": "chrom"
+        },
+        "filename": "mini_fragmentCNV.txt",
+        "pos_begin": {
+          "column_name": "pos_beg"
+        },
+        "pos_end": {
+          "column_name": "pos_end"
+        },
+        "zero_based": true
+      },
+      "type": "fragment_score"
+    },
+    "full_id": "mini_fragmentscore",
+    "id": "mini_fragmentscore",
+    "manifest": [
+      {
+        "md5": "14b5427c5e446023889d61d032c394d2",
+        "name": "genomic_resource.yaml",
+        "size": 601
+      },
+      {
+        "md5": "96c2088e883f8e9aeb5831b3305ac517",
+        "name": "mini_fragmentCNV.txt",
+        "size": 128
+      },
+      {
+        "md5": "076c3d462b6f033d6f6da1f120f5cbbb",
+        "name": "statistics/histogram_cnv_name.json",
+        "size": 76
+      },
+      {
+        "md5": "10b148982ea23c00d12fdd6ddda1b720",
+        "name": "statistics/histogram_cnv_name.png",
+        "size": 11401
+      },
+      {
+        "md5": "631a49ff6c4ae5ecc9159292444e9f38",
+        "name": "statistics/histogram_deletion_duplication.json",
+        "size": 182
+      },
+      {
+        "md5": "78f71d7af93eec7396332ef262ed91a1",
+        "name": "statistics/histogram_deletion_duplication.png",
+        "size": 20467
+      },
+      {
+        "md5": "59a9d76ea08807d483be4a067f9da0c8",
+        "name": "statistics/stats_hash",
+        "size": 847
       }
     ],
     "version": "0"

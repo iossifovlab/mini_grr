@@ -1,7 +1,7 @@
-type: cnv_collection
+type: fragment_score
 table:
-  filename: mini_CNV.txt 
-
+  filename: mini_fragmentCNV.txt 
+  zero_based: true
   chrom:
     column_name: chrom
   pos_begin:
@@ -25,6 +25,6 @@ scores:
 
 meta:
   summary: |
-    CNV collection resource
+    fragment score resource for CNVs
   description: |
     A toy collection of copy number variants (CNVs) with their genomic coordinates and type (deletion or duplication).

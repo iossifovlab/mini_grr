@@ -8,7 +8,8 @@
     ],
     "table": {
       "config": {
-        "filename": "mini_CNV.txt",
+        "filename": "mini_fragmentCNV.txt",
+        "zero_based": true,
         "chrom": {
           "column_name": "chrom"
         },
@@ -20,7 +21,7 @@
         }
       },
       "files_md5": {
-        "mini_CNV.txt": "96c2088e883f8e9aeb5831b3305ac517"
+        "mini_fragmentCNV.txt": "96c2088e883f8e9aeb5831b3305ac517"
       }
     }
   },
