@@ -1,5 +1,5 @@
 from typing import IO
-from dae.genomic_resources.histogram import CategoricalHistogram
+from gain.genomic_resources.histogram import CategoricalHistogram
 import matplotlib
 import matplotlib.pyplot as plt
 matplotlib.use("agg")
